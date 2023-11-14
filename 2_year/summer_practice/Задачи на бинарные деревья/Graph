@@ -1,0 +1,14 @@
+digraph {
+	48 [label=48]
+	3 -> 48 [style=dashed]
+	95 [label=95]
+	48 -> 95 [style=dashed]
+	121 [label=121]
+	48 -> 121
+	67 [label=67]
+	3 -> 67
+	7 [label=7]
+	67 -> 7 [style=dashed]
+	400 [label=400]
+	67 -> 400
+}
