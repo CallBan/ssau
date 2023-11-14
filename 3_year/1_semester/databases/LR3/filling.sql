@@ -55,7 +55,7 @@ insert into contract(contract_id, type, company, student_id) values
     (9, "Целевое", "Тинькофф", 24),
     (10, "Целевое", "Яндекс", 27);
 
-insert into contract(contract_id, company, student_id) values
+insert into contract(contract_id, type, student_id) values
     (11, "Бюджет", 2),
     (12, "Бюджет", 3),
     (13, "Бюджет", 5),

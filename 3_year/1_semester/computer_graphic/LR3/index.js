@@ -210,6 +210,62 @@ function seededAlgorithm(imageData, x, y, color) {
   }
 }
 
+function modifyedSeededAlgorithm(imageData, x0, y0, pattern = [[1]], color) {
+  if (checkColor(imageData, x0, y0, color)) return;
+  let pixelColor = getColor(imageData, x0, y0);
+  let stack = [];
+  let pixel = {x: x0, y: y0};
+  let x, y;
+  stack.push(pixel);
+  do {
+      let xLeft, xRight;
+      pixel = stack.pop();
+      x = pixel.x;
+      y = pixel.y;
+      while (x >= 0 && checkColor(imageData, x, y, pixelColor)) {
+          setPoint(imageData, x, y, [[1]], color);
+          x--;
+      }
+      xLeft = x + 1;
+
+      x = pixel.x + 1;
+      while (x < imageData.width && checkColor(imageData, x, y, pixelColor)) {
+          setPoint(imageData, x, y, [[1]], color);
+          x++;
+      }
+      xRight = x - 1;
+
+      let colorChange;
+      y = pixel.y - 1;
+      if (y != -1) {
+          colorChange = 0;
+          for (let x = xRight; x >= xLeft; x--) {
+              if (checkColor(imageData, x, y, pixelColor) && colorChange == 0) {
+                  colorChange = 1;
+                  stack.push({x: x, y: y});
+              }
+              else if (!checkColor(imageData, x, y, pixelColor) && colorChange == 1) {
+                  colorChange = 0;
+              }
+          }
+      }
+      
+      y = pixel.y + 1;
+      if (y != imageData.height) {
+          colorChange = 0;
+          for (let x = xRight; x >= xLeft; x--) {
+              if (checkColor(imageData, x, y, pixelColor) && colorChange == 0) {
+                  colorChange = 1;
+                  stack.push({x: x, y: y});
+              }
+              else if (!checkColor(imageData, x, y, pixelColor) && colorChange == 1) {
+                  colorChange = 0;
+              }
+          }
+      }
+  } while (stack.length != 0)
+}
+
 function getAdjacent(imageData, x, y, color) {
   let result = [];
   if (y + 1 < imageData.height && checkColor(imageData, x, y + 1, color)) {
