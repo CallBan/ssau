@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fractal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="title">Введите minX:</h1>
+    <input type="number" id="minX" />
+    <h1 class="title">Введите maxX:</h1>
+    <input type="number" id="maxX" />
+    <h1 class="title">Введите minY:</h1>
+    <input type="number" id="minY" />
+    <h1 class="title">Введите maxY:</h1>
+    <input type="number" id="maxY" />
+    <h1 class="title">Масштаб:</h1>
+    <input type="number" id="M"/>%
+    <h1 class="title">Введите N:</h1>
+    <input type="number" id="N"/>
+    <button onclick="Submit()">Нарисовать</button>
+    <canvas id="canvas" class="main-canvas"></canvas>
+    <script src="fractal.js"></script>
+  </body>
+</html>

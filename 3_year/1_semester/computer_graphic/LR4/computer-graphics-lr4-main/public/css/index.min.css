@@ -1,0 +1,29 @@
+.canvas-div {
+  display: block;
+  margin: auto;
+}
+.canvas {
+  border: 1px solid #000;
+}
+.image {
+  margin: 10px;
+}
+.inputs {
+  display: flex;
+  align-items: center;
+}
+.input-number {
+  font-size: 16px;
+  width: 80px;
+  margin-right: 10px;
+}
+#accept-button {
+  width: 100px;
+  height: 25px;
+}
+.canvases {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+} /*# sourceMappingURL=index.min.css.map */
