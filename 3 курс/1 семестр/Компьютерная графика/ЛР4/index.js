@@ -66,8 +66,8 @@ function toShadesOfGray(imageData) {
 }
 
 function gradientOutlineSelection(imageData) {
-  for (let x = 0; x < imageData.width - 1; x++) {
-    for (let y = 0; y < imageData.height - 1; y++) {
+  for (let x = 0; x < imageData.width; x++) {
+    for (let y = 0; y < imageData.height; y++) {
       let current = getPixel(imageData, x, y)[0];
       let up = getPixel(imageData, x, y + 1)[0];
       let right = getPixel(imageData, x + 1, y)[0];

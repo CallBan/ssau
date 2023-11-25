@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ЛР5</title>
+    <meta charset="utf-8" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="content">
+      <div id="display_image">
+        <canvas id="image_1">Обновите браузер</canvas>
+      </div>
+
+      <div class="container_for_trackbar">
+		<div>
+			<labe>Масштабирование</labe>
+			<div>
+			  <input
+				type="range"
+				id="strackbar"
+				min="20"
+				max="50"
+				value="20"
+				step="1"
+			  />
+			  <span id="strackbarValue">20</span>
+			</div>
+		  </div>
+        <div>
+          <label>Перемещение</label>
+          <div>
+            <input type="range" id="oftrackbar_x" min="0" max="10" value="0" />
+            X: <span id="oftrackbar_xValue">0</span>
+          </div>
+
+          <div>
+            <input
+              type="range"
+              id="oftrackbar_y"
+              min="0"
+              max="10"
+              value="0"
+              step="1"
+            />
+            Y: <span id="oftrackbar_yValue">0</span>
+          </div>
+
+          <div>
+            <input
+              type="range"
+              id="oftrackbar_z"
+              min="0"
+              max="10"
+              value="0"
+              step="1"
+            />
+            Z: <span id="oftrackbar_zValue">0</span>
+          </div>
+        </div>
+        <div>
+          <labe>Поворот</labe>
+          <div>
+            <input
+              type="range"
+              id="rtrackbar_x"
+              min="0"
+              max="360"
+              value="0"
+              step="1"
+            />
+            X: <span id="rtrackbar_xValue">0</span>
+          </div>
+
+          <div>
+            <input
+              type="range"
+              id="rtrackbar_y"
+              min="0"
+              max="360"
+              value="0"
+              step="1"
+            />
+            Y: <span id="rtrackbar_yValue">0</span>
+          </div>
+
+          <div>
+            <input
+              type="range"
+              id="rtrackbar_z"
+              min="0"
+              max="360"
+              value="0"
+              step="1"
+            />
+            Z: <span id="rtrackbar_zValue">0</span>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <script src="my_program.js"></script>
+  </body>
+</html>
