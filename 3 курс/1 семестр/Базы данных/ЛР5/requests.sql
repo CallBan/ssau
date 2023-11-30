@@ -125,7 +125,7 @@ START TRANSACTION;
 
 select * from category;
 
-insert into ViewScholarship(category_id, category_name, category_scholarship) value
+insert into category(category_id, name, scholarship) value
 (7, "Суперсоциальная", 34000);
 
 select * from category;
@@ -141,7 +141,7 @@ START TRANSACTION;
 
 select * from category;
 
-insert into ViewScholarship(category_id, category_name, category_scholarship) value
+insert into category(category_id, name, scholarship) value
 (7, "Суперсоциальная", 34000);
 
 select * from category;

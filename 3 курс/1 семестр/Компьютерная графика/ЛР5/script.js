@@ -68,10 +68,10 @@ function polygons(layers) {
         for(let j = 0; j < layer.length; j++) {
             let n = layer.length;
             let polygonPoints = [
-                layer[j],
+                layer[j % n],
                 layer[(j+1) % n],
-                next_layer[j],
-                next_layer[(j+1) % n]
+                next_layer[(j+1) % n],
+                next_layer[(j+2) % n]
             ];
             polygons.push(polygonPoints)
         }
