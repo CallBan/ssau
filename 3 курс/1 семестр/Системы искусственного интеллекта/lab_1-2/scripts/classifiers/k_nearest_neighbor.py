@@ -105,7 +105,8 @@ class KNearestNeighbor(object):
             # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
 
             test_point = X[i]
-            dists[i] = ((self.X_train - test_point) ** 2).sum(axis=1) ** 0.5 
+            dists[i] = ((self.X_train - test_point) ** 2).sum(axis=1) ** 0.5 # из каждой строчки train вычитаем test_point, 
+            #суммируем по строке
 
             # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
         return dists

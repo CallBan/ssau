@@ -38,25 +38,17 @@ def softmax_loss_naive(W, X, y, reg):
         label_idx = y[i]
         
         vec = element.dot(W)
-        
-      
-        
+              
         softmax = np.exp(vec) / np.exp(vec).sum()
         
         dscores = np.exp(vec) / np.exp(vec).sum()
         
-        dscores[label_idx] -= 1
-        dLdf = dscores
-        dW += element.reshape((X.shape[1], 1)).dot(dscores.reshape(1, W.shape[1]))
-      
-        
+        dscores[label_idx] -= 1 # производная
+        dW += element.reshape((X.shape[1], 1)).dot(dscores.reshape(1, W.shape[1])) #X[i] * W[i]
+           
         my_reg = (0.5 * W ** 2).sum()
         loss_i = - np.log(softmax[label_idx]) + reg * my_reg
-        
-        
-        
-        
-        
+                      
         loss_sum += loss_i
         
       
@@ -84,7 +76,6 @@ def softmax_loss_vectorized(W, X, y, reg):
     # regularization!                                                           #
     #############################################################################
     # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
-
     scores = X.dot( W)
     num_examples = X.shape[0]
     # get unnormalized probabilities
@@ -100,11 +91,8 @@ def softmax_loss_vectorized(W, X, y, reg):
     dscores /= X.shape[0]
 
     dW = np.dot(X.T, dscores)
-    db = np.sum(dscores, axis=0, keepdims=True)
     dW += reg*W 
     
- 
-
     # compute the loss: average cross-entropy loss and regularization
     data_loss = np.sum(correct_logprobs)/num_examples
     reg_loss = 0.5*reg*np.sum(W*W)
