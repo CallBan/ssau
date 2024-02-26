@@ -44,6 +44,9 @@ calcResult(List1, List2):-
    % Тест с пустым списком
    test(empty) :- not(split_list_until_value(1, [], [], [])).
 
+   % Тест с анонимной переменной
+   % test(anon, [nondet]):-not((_, [23,92,4], [23], [92,4])).
+
    % Тест с анонимной переменной и пустым списком
    test(anon_empty, [nondet]):- not(split_list_until_value(_, [], [], [])).
 
@@ -51,7 +54,6 @@ calcResult(List1, List2):-
    test(empty_fail, [fail]) :- split_list_until_value(_, [], _, _).
 
 :-end_tests(read).
-
 % Пример использования:
 % split_list_until_value(3, [1, 2, 3, 4, 5], List1, List2).
 % split_list_until_value(2, [1, 2, 3, 4, 5], List1, List2).
