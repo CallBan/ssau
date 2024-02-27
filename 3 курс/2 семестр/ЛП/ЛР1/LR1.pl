@@ -24,8 +24,12 @@ split_list_until_value(Value, [Head|Tail], [Head|List1], List2) :-
 calcResult(List1, List2):-
     new(R, dialog('Result')),
     send(R, append, new(text('Результат: '))),
-    send(R, append, new(text(string(List1)))), % выводим первую часть списка
-    send(R, append, new(text(string(List2)))), % выводим вторую часть списка
+    atomic_list_concat(List1, ',', Atom1),
+    atom_string(Atom1, Result1),
+    atomic_list_concat(List2, ',', Atom2),
+    atom_string(Atom2, Result2),
+    send(R, append, new(text(Result1))), % выводим первую часть списка
+    send(R, append, new(text(Result2))), % выводим вторую часть списка
     send(R, open).
 
 
@@ -33,13 +37,13 @@ calcResult(List1, List2):-
 :-begin_tests(read).
 
    % Заданный элемент в начале списка
-   test(begin):- split_list_until_value(1, [1,2,6,4], [1], [2,6,4]).
+   test(first, [true(R1==[1])]):- split_list_until_value(1, [1,2,6,4], R1, [2,6,4]).
 
    % Заданный элемент в середине списка
-   test(begin):- split_list_until_value(1, [2,6,1,8,4], [2,6,1], [8,4]).
+   test(middle):- split_list_until_value(1, [2,6,1,8,4], [2,6,1], [8,4]).
 
    % Заданный элемент в конце списка
-   test(begin):- split_list_until_value(1, [2,6,8,4,1], [2,6,8,4,1], []).
+   test(last):- split_list_until_value(1, [2,6,8,4,1], [2,6,8,4,1], []).
 
    % Тест с пустым списком
    test(empty) :- not(split_list_until_value(1, [], [], [])).
