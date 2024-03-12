@@ -21,3 +21,7 @@ who_broke_the_window(X) :-
 
     (not(arshavin1(X)), not(arshavin2(X))), (sergeev1(X), sergeev2(X)), (kanunnikov1(X); kanunnikov2(X)).
 
+solve(X) :-
+    who_broke_the_window(arshavin), X = arshavin;
+    who_broke_the_window(sergeev), X = sergeev;
+    who_broke_the_window(kanunnikov), X = kanunnikov.
