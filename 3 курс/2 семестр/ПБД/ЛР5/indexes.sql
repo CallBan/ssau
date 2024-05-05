@@ -12,14 +12,16 @@ WHERE main_artist.NAME = 'Toka Project';
 
 -- Найти всех исполнителей, в описании (профиле) которых встречается
 -- указанное выражение, с использованием полнотекстового запроса.
+ALTER TABLE artist ADD FULLTEXT(PROFILE);
 SELECT *
 FROM artist
-WHERE PROFILE LIKE '%musician%';
+WHERE MATCH (PROFILE) AGAINST
+('rapper');
 
 -- Оценивается время выполнения запросов. 
--- 5.875 sec
--- 64.750 sec
--- 140.172 sec
+-- 5.938 sec
+-- 232.156 sec
+-- 204.594 sec
 
 -- Анализируется план выполнения запросов. 
 explain select * from artist where name = 'Stereo People';
@@ -30,7 +32,8 @@ JOIN artist AS main_artist ON main_artist.ARTIST_ID = g.MAIN_ARTIST_ID
 WHERE main_artist.NAME = 'Toka Project';
 explain SELECT *
 FROM artist
-WHERE PROFILE LIKE '%musician%';
+WHERE MATCH (PROFILE) AGAINST
+('rapper');
 
 -- Создаются необходимые индексы для повышения быстродействия запросов.
 -- Выполнение запроса должно исключать полное сканирование таблицы
