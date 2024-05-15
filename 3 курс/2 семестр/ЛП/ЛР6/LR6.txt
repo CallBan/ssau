@@ -1,0 +1,53 @@
+case class Book(title: String, author: String, year: Int, copies: Int)
+
+class Library(val name: String, val books: List[Book]) {
+  // Поиск книг с заданным названием с использованием хвостовой рекурсии
+  def findBooksByTitle(targetTitle: String): List[Book] = {
+    @annotation.tailrec
+    def findBooks(remainingBooks: List[Book], foundBooks: List[Book]): List[Book] = remainingBooks match {
+      case Nil => foundBooks
+      case head :: tail =>
+        if (head.title.equalsIgnoreCase(targetTitle)) findBooks(tail, head :: foundBooks)
+        else findBooks(tail, foundBooks)
+    }
+
+    findBooks(books, Nil)
+  }
+}
+
+object LibraryApp extends App {
+  // Создание списка книг
+  val booksList1 = List(
+    Book("The Hobbit", "J.R.R. Tolkien", 1937, 5),
+    Book("1984", "George Orwell", 1949, 4),
+    Book("To Kill a Mockingbird", "Harper Lee", 1960, 2)
+  )
+
+  val booksList2 = List(
+    Book("The Great Gatsby", "F. Scott Fitzgerald", 1925, 3),
+    Book("Moby Dick", "Herman Melville", 1851, 1),
+    Book("War and Peace", "Leo Tolstoy", 1869, 2)
+  )
+
+  val booksList3 = List(
+    Book("The Catcher in the Rye", "J.D. Salinger", 1951, 4),
+    Book("The Hobbit", "J.R.R. Tolkien", 1937, 3),
+    Book("Pride and Prejudice", "Jane Austen", 1813, 5)
+  )
+
+  // Создание библиотек
+  val library1 = new Library("Central Library", booksList1)
+  val library2 = new Library("West End Library", booksList2)
+  val library3 = new Library("Downtown Library", booksList3)
+
+  // Список всех библиотек
+  val libraries = List(library1, library2, library3)
+
+  // Поиск всех книг с названием "The Hobbit" в каждой библиотеке
+  libraries.foreach { library =>
+    println(s"Searching for 'The Hobbit' in ${library.name}:")
+    val foundBooks = library.findBooksByTitle("The Hobbit")
+    foundBooks.foreach(book => println(s"  Title: ${book.title}, Author: ${book.author}, Year: ${book.year}, Copies: ${book.copies}"))
+    println()
+  }
+}

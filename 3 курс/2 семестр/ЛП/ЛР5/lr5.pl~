@@ -28,4 +28,4 @@ remove_substring(String, StartPos, Length, Result) :-
 :- end_tests(remove_substring).
 
 % Запуск тестов:
-% ?- run_tests(remove_substring).
+% run_tests(remove_substring).

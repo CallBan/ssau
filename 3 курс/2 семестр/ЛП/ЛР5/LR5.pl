@@ -2,7 +2,8 @@
 remove_substring(String, StartPos, Length, Result) :-
     string_length(String, StrLen),
     EndPos is StartPos + Length,
-    EndPos =< StrLen,     sub_string(String, 0, StartPos, _, LeftPart),
+    EndPos =< StrLen,
+    sub_string(String, 0, StartPos, _, LeftPart),
     sub_string(String, EndPos, _, 0, RightPart),
     string_concat(LeftPart, RightPart, Result).
 
@@ -23,6 +24,8 @@ remove_substring(String, StartPos, Length, Result) :-
     % Удаление подстроки из конца строки
     test(end, [true(Result == "Hello, Worl!")]) :-
         remove_substring("Hello, World!", 11, 1, Result).
+
+
 
 
 :- end_tests(remove_substring).
