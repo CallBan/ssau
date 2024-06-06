@@ -7,7 +7,7 @@
 <AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="8.9.0.202404161236" AlpVersion="8.9.0">
 <Model>
 	<Id>1683134842097</Id>
-	<Name><![CDATA[MVS1]]></Name>
+	<Name><![CDATA[МВС]]></Name>
 	<EngineVersion>6</EngineVersion>
 	<JavaPackageName><![CDATA[мвс_1]]></JavaPackageName>
 	<ModelTimeUnit><![CDATA[Second]]></ModelTimeUnit>
@@ -442,7 +442,7 @@
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
 						<Type><![CDATA[double]]></Type>        
 						<InitialValue Class="CodeValue">
-							<Code><![CDATA[1]]></Code>
+							<Code><![CDATA[0.12]]></Code>
 						</InitialValue>
 					</Properties>
 				</Variable>
@@ -457,7 +457,7 @@
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
 						<Type><![CDATA[double]]></Type>        
 						<InitialValue Class="CodeValue">
-							<Code><![CDATA[3.0]]></Code>
+							<Code><![CDATA[3.24]]></Code>
 						</InitialValue>
 					</Properties>
 				</Variable>
@@ -472,7 +472,7 @@
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
 						<Type><![CDATA[double]]></Type>        
 						<InitialValue Class="CodeValue">
-							<Code><![CDATA[4.1]]></Code>
+							<Code><![CDATA[3.96]]></Code>
 						</InitialValue>
 					</Properties>
 				</Variable>
@@ -2404,7 +2404,14 @@ agent.время_обработки_задания_сервером=0;
 
 for(int i=0; i<agent.количество_командных_строк_в_задании; i++)
 {
-	agent.время_обработки_задания_сервером += normal(normal_sigma, normal_mean);
+	double t = normal(normal_sigma, normal_mean);
+	if (t < 5) {
+		t = 5;
+	}
+	else if (t > 50) {
+		t = 50;
+	}
+	agent.время_обработки_задания_сервером += t;
 	// += 3,6;
 }
 switch(agent.номер_ТС)
@@ -6875,10 +6882,10 @@ copyToClipboard( s );]]></ActionCode>
 				<Id>1714923786679</Id>
 				<Type>CONTINUOUS</Type>
 				<Min Class="CodeValue">
-					<Code><![CDATA[13]]></Code>
+					<Code><![CDATA[5]]></Code>
 				</Min>
 				<Max Class="CodeValue">
-					<Code><![CDATA[14]]></Code>
+					<Code><![CDATA[50]]></Code>
 				</Max>
 				<Step Class="CodeValue">
 					<Code><![CDATA[0.01]]></Code>
@@ -6917,19 +6924,19 @@ if (bestInfeasibleObjective != Double.NEGATIVE_INFINITY) {
 				<Bound>0.9</Bound>
 			</Requirement>
 			<Requirement>
-				<Enabled>false</Enabled>
+				<Enabled>true</Enabled>
 				<Expression><![CDATA[root.вероятность_не_превышения_5_минут2]]></Expression>
 				<Type>MORE_OR_EQUAL</Type>
 				<Bound>0.9</Bound>
 			</Requirement>
 			<Requirement>
-				<Enabled>false</Enabled>
+				<Enabled>true</Enabled>
 				<Expression><![CDATA[root.вероятность_не_превышения_5_минут3]]></Expression>
 				<Type>MORE_OR_EQUAL</Type>
 				<Bound>0.9</Bound>
 			</Requirement>
 			<Requirement>
-				<Enabled>false</Enabled>
+				<Enabled>true</Enabled>
 				<Expression><![CDATA[root.вероятность_не_превышения_5_минут4]]></Expression>
 				<Type>MORE_OR_EQUAL</Type>
 				<Bound>0.9</Bound>
@@ -6956,7 +6963,7 @@ if (bestInfeasibleObjective != Double.NEGATIVE_INFINITY) {
 				<FinalDate><![CDATA[1683077000000]]></FinalDate>	
 				<FinalTime><![CDATA[5000.0]]></FinalTime>	
 				<StopAfterIterationCount>true</StopAfterIterationCount>
-				<IterationCount>1500</IterationCount>
+				<IterationCount>500</IterationCount>
 				<AutomaticStop>false</AutomaticStop>
 			</ModelTimeProperties>
 		</OptimizationExperiment>	
