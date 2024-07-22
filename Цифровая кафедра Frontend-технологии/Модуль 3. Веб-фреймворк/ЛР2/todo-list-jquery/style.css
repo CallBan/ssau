@@ -1,0 +1,24 @@
+body {
+  font-family: Arial, sans-serif;
+}
+#todo-list {
+  list-style-type: none;
+  padding: 0;
+}
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 10px;
+}

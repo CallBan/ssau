@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Лабораторная работа 6</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body
+    class="bg-light"
+    data-bs-spy="scroll"
+    style="position: relative"
+    data-bs-target="#side-menu-scroll"
+    data-bs-offset="0"
+  >
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+      <ul class="navbar-nav vertical-center">
+        <li>
+          <button
+            class="btn btn-dark btn-nav"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#side-menu"
+            aria-controls="offcanvasExample"
+          >
+            <span class="navbar-toggler-icon "></span>
+          </button>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="info.html" style="font-size: 20px;">Основная информация</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="films.html" style="font-size: 20px;">Список фильмов</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div
+      class="offcanvas offcanvas-start text-bg-dark"
+      tabindex="-1"
+      id="side-menu"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Содержание</h5>
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="offcanvas"
+          aria-label="Закрыть"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <nav id="side-menu-scroll">
+          <ul class="navbar-nav navbar-dark">
+            <li class="nav-item">
+              <a class="nav-link hover-effect" href="#photo">Фото</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hover-effect" href="#films">Фильмы</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hover-effect" href="#biography">Биография</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div id="photo" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#photo"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#photo"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#photo"
+          data-bs-slide-to="2"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="/img/1.jpg"
+            alt="Photo 1"
+            class="d-block"
+            style="width: 100%"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/img/2.jpg"
+            alt="Photo 2"
+            class="d-block"
+            style="width: 100%"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/img/3.jpg"
+            alt="Photo 3"
+            class="d-block"
+            style="width: 100%"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#photo"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#photo"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <h1 id="films">Фильмы</h1>
+    <div class="cards-container">
+      <div class="card" style="width: 450px">
+        <img
+          src="/img/poster1.jpg"
+          alt="Oppenheimer"
+          class="card-img-top"
+          style="width: 450px"
+        />
+        <div class="card-body">
+          <h4 class="card-title">Оппенгеймер</h4>
+          <p class="card-text">
+            Оппенгеймер» представляет байопик о жизни «отца атомной бомбы»
+            Роберта Оппенгеймера, который фокусируется на тесте разрушительного
+            оружия и последствиях использования этой страшной силы. Причём не
+            только для Роберта и остальных учёных, но и для всего мира в целом
+          </p>
+          <a
+            href="https://www.kinopoisk.ru/film/4664634/?ysclid=loe82gshct593006417"
+            class="btn btn-dark"
+            target="_blank"
+            >Смотреть</a
+          >
+        </div>
+      </div>
+      <div class="card" style="width: 450px">
+        <img
+          src="/img/poster2.jpg"
+          alt="PeakyBlinders"
+          class="card-img-top"
+          style="width: 450px"
+        />
+        <div class="card-body">
+          <h4 class="card-title">Острые козырьки</h4>
+          <p class="card-text">
+            Британский сериал о криминальном мире Бирмингема 20-х годов прошлого
+            века, в котором многолюдная семья Шелби стала одной из самых
+            жестоких и влиятельных гангстерских банд послевоенного времени.
+            Фирменным знаком группировки, промышлявшей грабежами и азартными
+            играми, стали зашитые в козырьки лезвия.
+          </p>
+          <a
+            href="https://www.kinopoisk.ru/series/716587/?ysclid=loe91zg8xy816824644"
+            class="btn btn-dark"
+            target="_blank"
+            >Смотреть</a
+          >
+        </div>
+      </div>
+      <div class="card" style="width: 450px">
+        <img
+          src="/img/poster3.jpg"
+          alt="Inception"
+          class="card-img-top"
+          style="width: 450px"
+        />
+        <div class="card-body">
+          <h4 class="card-title">Начало</h4>
+          <p class="card-text">
+            Кобб – талантливый вор, лучший из лучших в опасном искусстве
+            извлечения: он крадет ценные секреты из глубин подсознания во время
+            сна, когда человеческий разум наиболее уязвим. Редкие способности
+            Кобба сделали его ценным игроком в привычном к предательству мире
+            промышленного шпионажа, но они же превратили его в извечного беглеца
+            и лишили всего, что он когда-либо любил.
+          </p>
+          <a
+            href="https://www.kinopoisk.ru/film/447301/?ysclid=loecsmkdlr590316"
+            class="btn btn-dark"
+            target="_blank"
+            >Смотреть</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <h1 id="biography">Биография</h1>
+    <ul>
+      <li>
+        <div class="biography">
+          <button
+            type="button"
+            class="btn btn-light"
+            data-bs-toggle="collapse"
+            data-bs-target="#childhood"
+          >
+            <h2>Детство</h2>
+          </button>
+          <div id="childhood" class="collapse show">
+            Мерфи родился в 25 мая 1976 года в ирландском городке Дуглас, но
+            детство провел в поселке Баллинтемпл, который находится в том же
+            графстве Корк. Отец актера, Брендан Мерфи, работал в Ирландском
+            департаменте образования, мама преподавала французский язык в школе.
+            Тети, дяди и дед Мерфи тоже были учителями. Мерфи посещал
+            католическую школу, но из-за непоседливого характера часто попадал в
+            неприятности и получал отстранение от занятий. В итоге через четыре
+            года обучения Мерфи перешел в другую, менее дисциплинированную
+            школу. Спорт болезненный Киллиан не любил, его занимал мир
+            творчества. В 10 лет мальчик увлекся музыкой и начал писать песни.
+            Как и трое его младших братьев и сестер, он мечтал стать
+            рок-музыкантом и усердно упражнялся в игре на гитаре. Подростком он
+            сколотил группу «The Sons of Mr. Green Genes», куда также вошел его
+            младший брат Пайди. Все изменилось, когда 16-летний Киллиан попал на
+            урок театрального мастерства, организованный преподавателями его
+            школы. Он признался сам себе, что театр по уровню накала эмоций
+            ничуть не уступает музыке, и присоединился к театральному кружку
+            «Corcadorca».
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="biography">
+          <button
+            type="button"
+            class="btn btn-light"
+            data-bs-toggle="collapse"
+            data-bs-target="#education"
+          >
+            <h2>Образование</h2>
+          </button>
+          <div id="education" class="collapse show">
+            В 1996 году Мерфи поступил на юридический факультет Ирландского
+            национального университета в Корке, но свой первый же экзамен юноша
+            провалил, потому как, по его словам, у него было никаких амбиций на
+            этом поприще. В сентябре 1996 года он впервые выступил на
+            профессиональной сцене вместе с приятелями по театральной студии.
+            Постановка называлась «Дискосвиньи» и рассказывала о жизни двух
+            влюбленных подростков. Позднее Мерфи описал этот опыт как
+            «возвышенное» и «полностью живое» ощущение, которое ему очень
+            понравилось. Вскоре Мерфи с труппой театра отправился со спектаклем
+            в двухлетний тур по Европе, Канаде и Австралии; ради этого юноша
+            бросил университет и позабыл про рок-группу. Дорогу в кинематограф
+            Мерфи начал прокладывать с короткометражных и независимых фильмов
+            ирландских режиссеров. В 1999 году он исполнил главную роль в драме
+            «Солнечный ожог», где его партнершей стала небезызвестная российским
+            зрителям Ингеборга Дапкунайте.
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="biography">
+          <button
+            type="button"
+            class="btn btn-light"
+            data-bs-toggle="collapse"
+            data-bs-target="#private"
+          >
+            <h2>Личная жизнь</h2>
+          </button>
+          <div id="private" class="collapse show">
+            В 2004 году Мерфи женился на своей подруге Ивонн Макгиннесс,
+            ирландской художнице. С будущей супругой он познакомился в 1996 году
+            на одном из концертов его группы. Пара живет в городе Монкстаун в
+            Ирландии, воспитывает сыновей Малахи (2005 г.р.) и Арана Мерфи (2007
+            г.р.). Мерфи часто выступает в театрах Дублина, поэтому не желает
+            переезжать в Голливуд. Актер предпочитает не говорить о своей личной
+            жизни и редко появляется на телевидении; у него нет личного стилиста
+            или персонального публициста, а на премьеры фильмов актер часто
+            приходит один. Мерфи дружит с другими ирландскими актерами Колином
+            Фаррелом, Джонатаном Рис-Мейерсом и Лиамом Нисоном, которого он
+            называет своим «суррогатным кино-папой». Но самые близкие друзья
+            Мерфи – это те, с кем познакомился до своей звездной карьеры.
+          </div>
+        </div>
+      </li>
+    </ul>
+  </body>
+</html>

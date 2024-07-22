@@ -1,0 +1,71 @@
+table, th, td {
+    border-bottom: 2px solid rgb(7, 7, 7);
+    border-collapse: collapse;
+    padding: 8px;
+    text-align: center;
+}
+
+table {
+    margin: auto;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;   
+}
+
+th {
+    background-color: rgb(190, 190, 190);
+}
+
+form {
+    margin: auto;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    border: 3px solid rgb(24, 11, 212);
+    border-radius: 10px;
+}
+
+input {
+    
+    box-sizing: border-box;
+    width: 300px;
+    height: 20px;
+}
+
+.submit-button {
+    margin-top: 20px;
+    width: 300px;
+    height: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    background-color: rgb(24, 11, 212);
+    color: rgb(96, 211, 125);
+    border: 3px solid aquamarine;
+    border-radius: 10px;
+}
+
+.table-container {
+    display: flex;
+    align-items: center;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+}
+
+.table-name {
+    margin: 10px;
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(24, 11, 212);
+    text-align: center;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: aquamarine;
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(92, 133, 248);
+}

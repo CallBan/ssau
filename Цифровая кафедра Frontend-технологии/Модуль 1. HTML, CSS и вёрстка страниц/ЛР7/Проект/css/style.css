@@ -1,0 +1,26 @@
+h1 {
+  text-align: center;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.biography {
+  margin: 20px;
+}
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+.btn-nav {
+    margin-left: 10px;
+}
+
+.all-display {
+    width: 100%;
+    height: 100%;
+}
