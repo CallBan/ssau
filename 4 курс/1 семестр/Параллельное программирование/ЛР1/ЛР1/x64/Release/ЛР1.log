@@ -1,0 +1,8 @@
+﻿  ЛР1.cpp
+C:\Users\Dmitry\Documents\GitHub\ssau\4 курс\1 семестр\Параллельное программирование\ЛР1\ЛР1\ЛР1.cpp(14,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Создание кода
+  120 of 122 functions (98.4%) were compiled, the rest were copied from previous compilation.
+    109 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Создание кода завершено
+  ЛР1.vcxproj -> C:\Users\Dmitry\Documents\GitHub\ssau\4 курс\1 семестр\Параллельное программирование\ЛР1\x64\Release\ЛР1.exe
