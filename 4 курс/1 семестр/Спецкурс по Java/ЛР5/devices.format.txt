@@ -1,0 +1,2 @@
+main.model.Computer&Office PC&1000&CPU GPU RAM HDD Motherboard SSD
+main.model.Smartphone&Samsung Galaxy S22&1120&Instagram WhatsApp Facebook Telegram Spotify YouTube
