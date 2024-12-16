@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <title>О системе</title>
+        <style>
+            body {
+                margin: 0;
+                min-width: 960px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 16px;
+                line-height: 32px;
+                color: #222222;
+                background-color: #f2f4f6;
+                background-image: none;
+            }
+
+            .container {
+                max-width: 928px;
+                margin: 0 auto;
+                padding: 0 16px;
+            }
+
+            .page-header {
+                margin: 0 0 70px;
+            }
+            .page-header ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #9084b8;
+            }
+            .page-header li {
+                float: left;
+                border-right: 1px solid #bbb;
+            }
+            .page-header li:last-child {
+                border-right: none;
+            }
+            .page-header li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            .subheading {
+                margin: 0 0 52px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 64px;
+                line-height: 80px;
+                font-weight: 400;
+                text-align: center;
+            }
+
+            .about {
+                margin: 0 0 120px;
+            }
+            .about a {
+                text-decoration: none;
+                color: #222222;
+            }
+            .image-about {
+                margin: 0 0 32px;
+                max-width: 870px;
+                height: auto;
+            }
+            .about h2 {
+                margin: 0 12 12px;
+                font-size: 32px;
+                line-height: 40px;
+                font-weight: 500;
+            }
+            .about p {
+                margin: 0 0 32px;
+            }
+
+            .up {
+                padding: 0 70px;
+                float: right;
+            }
+
+            .button-up {
+                padding: 6px 20px;
+                display: inline-block;
+                vertical-align: baseline;
+                text-decoration: none;
+                border-radius: 4px;
+                background-color: #331d35;
+                color: #ffffff;
+            }
+
+            .page-footer .container {
+                max-width: 1408px;
+                text-align: center;
+            }
+            .page-footer {
+                padding: 10px 0;
+                background-color: #331d35;
+                color: #ffffff;
+            }
+
+            #scrollToTop {
+                position: fixed;
+                bottom: 100px;
+                right: 100px;
+                width: 50px;
+                height: 50px;
+                cursor: pointer;
+                opacity: 1;
+                transition: all 0.5s ease-in;
+            }
+        </style>
+    </head>
+
+    <body>
+        <main>
+            <div class="about">
+                <div class="container">
+                    <h1 class="subheading">Сведения о системе</h1>
+                    <p>
+                        Клавиатурный тренажер представляет собой
+                        автоматизированную систему прохождения упражнений для
+                        тренировки слепой печати с возможностью просмотра
+                        статистики.
+                    </p>
+
+                    <ul>
+                        <li><a href="#1">Страница "Упражнения"</a></li>
+                        <li><a href="#2">Прохождение упражнения</a></li>
+                        <li><a href="#3">Страница "Статистика"</a></li>
+                    </ul>
+
+                    <h2><a name="1">Страница "Упражнения"</a></h2>
+                    <p>
+                        После входа в систему откроется страница "Упражнения",
+                        где для каждого уровня сложности будет представлен
+                        список упражнений, которые пользователь сможет пройти.
+                        При нажатии на карточку упражнения откроется страница
+                        выполнения упражнения. У успешно пройденных упражненений
+                        на карточке отображено лучшее время прохождения.
+                    </p>
+                    <img class="image-about" src="img/1.png" />
+
+                    <h2><a name="2">Прохождение упражнения</a></h2>
+                    <p>
+                        Здесь пользователь проходит упражнение. Правильно
+                        введенный текст отображается черным цветом, ошибки -
+                        красным. Над полем ввода выводится статистика - прогресс
+                        выполнения, оставшееся время, количество ошибок. Внизу
+                        страницы представлены чек-боксы, отметив которые,
+                        пользователь может включить/выключить визуализацию
+                        клавиатуры и звуковое сопровождение. Обратный отсчет
+                        времени начинается с момента ввода первого символа.
+                    </p>
+                    <img class="image-about" src="img/2.png" />
+
+                    <h2><a name="3">Страница "Статистика"</a></h2>
+                    <p>
+                        На этой странице отображена статистика пользователя по
+                        упражнениям для каждого уровня сложности - среднее время
+                        нажатия на клавишу (в виде линейного графика) и
+                        колчиество ошибок (в виде гистограммы) для каждого
+                        упражнения. Уровень сложности можно выбрать в левой
+                        панели.
+                    </p>
+                    <img class="image-about" src="img/3.png" />
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
