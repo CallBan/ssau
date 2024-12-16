@@ -1,0 +1,39 @@
+
+
+.history-article {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.history-title {
+    font-size: 3em;
+    color: #333;
+    margin: 20px;
+}
+
+.history-title-h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.history-subtitle {
+    font-size: 1.5em;
+    color: #555;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.history-detail-title {
+    font-size: 1.2em;
+    color: #777;
+    margin-top: 15px;
+}
+
+.history-text {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 10px;
+}

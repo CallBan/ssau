@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.contact-main {
+    padding: 20px;
+  }
+  
+  .contact-section-title {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #555;
+  }
+  
+  /* Секция информации */
+  .contact-info p {
+    font-size: 1.1em;
+    margin: 10px 0;
+  }
+  
+  .contact-info ul {
+    padding-left: 20px;
+  }
+  
+  .contact-info ul li {
+    margin: 5px 0;
+  }
+  
+  /* Секция карты */
+  .contact-map {
+    margin-top: 30px;
+  }
+  
+  .map-container p {
+    margin-bottom: 15px;
+  }
+  
+  .map-image {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Форма */
+  .contact-form-section {
+    margin-top: 40px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .form-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-button {
+    background: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .form-button:hover {
+    background: #555;
+  }
+  
