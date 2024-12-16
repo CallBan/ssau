@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Porsche Dealership. TRADE-IN</title>
+        <link rel="stylesheet" href="styles/style.css" />
+        <link rel="stylesheet" href="styles/trade-in.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <img src="icons/porsche-icon.svg" alt="Logo" class="our-logo" />
+                <ul>
+                    <li class="nav-item"><a href="index.html">Главная</a></li>
+                    <li class="nav-item">
+                        <a href="catalog.html">Модели</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="history.html">История Porsche</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="service.html">Обслуживание</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacts.html">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="trade-in.html">TRADE-IN</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="form-container">
+                <h1>TRADE-IN</h1>
+                <form id="trade-in-form">
+                    <!-- Имя владельца -->
+                    <div class="form-group">
+                        <label for="owner-name"
+                            >Имя владельца (только буквы, 2-50 символов):</label
+                        >
+                        <input
+                            type="text"
+                            id="owner-name"
+                            name="owner-name"
+                            placeholder="Иван Иванов"
+                        />
+                        <div class="error" id="owner-name-error"></div>
+                    </div>
+
+                    <!-- Номер телефона -->
+                    <div class="form-group">
+                        <label for="phone"
+                            >Номер телефона (+7(XXX)XXX-XX-XX или +7XXX
+                            XXX-XX-XX.):</label
+                        >
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="+79001234567"
+                        />
+                        <div class="error" id="phone-error"></div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="email">Email (действительный):</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="example@mail.com"
+                        />
+                        <div class="error" id="email-error"></div>
+                    </div>
+
+                    <!-- Марка автомобиля -->
+                    <div class="form-group">
+                        <label for="car-brand">Модель Porsche:</label>
+                        <select id="car-brand" name="car-brand">
+                            <option value="">Выберите модель</option>
+                            <option value="Porsche">911</option>
+                            <option value="BMW">Cayman</option>
+                            <option value="Audi">Panamera</option>
+                            <option value="Mercedes-Benz">Cayenne</option>
+                        </select>
+                        <div class="error" id="car-brand-error"></div>
+                    </div>
+
+                    <!-- Год выпуска -->
+                    <div class="form-group">
+                        <label for="year"
+                            >Год выпуска (4 цифры, от 2000 до текущего
+                            года):</label
+                        >
+                        <input
+                            type="number"
+                            id="year"
+                            name="year"
+                            placeholder="2020"
+                            min="2000"
+                            max="2024"
+                        />
+                        <div class="error" id="year-error"></div>
+                    </div>
+
+                    <!-- Пробег -->
+                    <div class="form-group">
+                        <label for="mileage"
+                            >Пробег (в километрах, до 500000):</label
+                        >
+                        <input
+                            type="number"
+                            id="mileage"
+                            name="mileage"
+                            placeholder="50000"
+                            min="0"
+                            max="500000"
+                        />
+                        <div class="error" id="mileage-error"></div>
+                    </div>
+
+                    <!-- Фото автомобиля -->
+                    <div class="form-group">
+                        <label for="car-photo"
+                            >Фото автомобиля (только .jpg или .png):</label
+                        >
+                        <input
+                            type="file"
+                            id="car-photo"
+                            name="car-photo"
+                            accept=".jpg,.jpeg,.png"
+                        />
+                        <div class="error" id="car-photo-error"></div>
+                    </div>
+
+                    <!-- Кнопка отправки -->
+                    <button type="submit">Отправить данные</button>
+                    <div class="success-message" id="success-message"></div>
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <div class="social-media-links">
+                <img src="icons/porsche-icon.svg" alt="brand icon" />
+                <span>Мы в социальных сетях</span>
+                <div>
+                    <a href=""
+                        ><img src="icons/icons8-вконтакте.svg" alt="vk"
+                    /></a>
+                    <a href=""
+                        ><img
+                            width="52"
+                            src="icons/icons8-ютуб.svg"
+                            alt="youtube"
+                    /></a>
+                </div>
+            </div>
+
+            <table>
+                <tr>
+                    <td>
+                        <a href="catalog.html">Модельный ряд Porsche</a>
+                    </td>
+
+                    <td>Москва:<br />899999999</td>
+                </tr>
+                <tr>
+                    <td><a href="service.html">Обслуживание</a></td>
+                    <td>
+                        Санкт-Петербург:<br />
+                        899999999
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="">Оферта и политика конфиденциальности</a></td>
+                    <td>
+                        Самара:<br />
+                        899999999
+                    </td>
+                </tr>
+            </table>
+        </footer>
+        <script src="scripts/form.js"></script>
+    </body>
+</html>
