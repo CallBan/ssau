@@ -26,11 +26,11 @@ document
         }
 
         // Проверка телефона
-        if (!/^\+7(\d{3})[\s\-]?\(?\d{3}\)?[\s\-]?\d{2}[\s\-]?\d{2}$/.test(phone)) {
+        if (!/^\+7\(\d{3}\)\d{3}-\d{2}-\d{2}$/.test(phone) && !/^\+7\d{3} \d{3}-\d{2}-\d{2}$/.test(phone)) {
             document.getElementById("phone-error").textContent =
                 "Телефон должен быть в формате +7(XXX)XXX-XX-XX или +7XXX XXX-XX-XX.";
             isValid = false;
-        }
+        } 
         
 
         // Проверка email
