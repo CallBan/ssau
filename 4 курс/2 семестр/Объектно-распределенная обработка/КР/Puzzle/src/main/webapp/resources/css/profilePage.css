@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+/* Основной стиль для текста приветствия */
+        .profileText {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #E97425;
+            text-align: center;
+        }
+
+        /* Стиль для кнопок */
+        .profileButton {
+            background-color: #FFD6BA;
+            color: #E97425;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            margin: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .profileButton:hover {
+            background-color: #FFA76B;
+        }
+
+        /* Стиль для панели таблицы */
+        .profileStatsPanel {
+            margin-top: 30px;
+        }
+
+        /* Стиль для таблиц */
+        .profileTable {
+            width: 100%;
+            border-collapse: collapse;
+            color: #F2680B;
+            margin-top: 20px;
+        }
+
+        .profileTable th, .profileTable td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        .profileTable th {
+            background-color: #FFBC8F;
+            font-size: 1.1em;
+        }
+
+        .profileTable tr:nth-child(even) {
+            background-color: #FFDAAF;
+        }
+
+/*         .profileTable tr:hover {
+            background-color: #F2B388;
+        } */
+
+        /* Стиль для заголовков секций */
+        .sectionHeader {
+            font-size: 1.6em;
+            font-weight: bold;
+            margin-top: 20px;
+            text-align: center;
+            color: #F2680B;
+        }
+
+        /* Стиль для сообщений */
+        .noStatsMessage {
+            text-align: center;
+            font-size: 1.2em;
+            color: #ff5722;
+            margin-top: 30px;
+        }

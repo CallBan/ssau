@@ -1,0 +1,45 @@
+<!-- resources/menu.xhtml -->
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    <style>
+        .menu {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            background: #FFA76B;
+            padding: 20px 40px;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+        }
+
+        .otherButton {
+            background-color: #FFD6BA;
+            color: #E97425;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 40px;
+            margin: 10px 0;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 16px;
+        }
+
+        .otherButton:hover {
+            background-color: #FFBC8F;
+            outline: none;
+        }
+    </style>
+
+    <h:form styleClass="menu">
+        <h:commandButton styleClass="otherButton" value="Игра" action="#{pageLoader.loadGamePage()}" />
+        <h:commandButton styleClass="otherButton" value="Профиль" action="#{pageLoader.loadStatisticPage()}" />
+        <h:commandButton styleClass="otherButton" value="О системе" action="#{pageLoader.loadAboutSystemrPage()}" />
+        <h:commandButton styleClass="otherButton" value="О разработчике" action="#{pageLoader.loadAboutDeveloperPage()}" />
+    	<h:commandButton styleClass="otherButton" value="Выход" action="#{pageLoader.loadLoginPage()}" />
+    </h:form>
+
+</ui:composition>

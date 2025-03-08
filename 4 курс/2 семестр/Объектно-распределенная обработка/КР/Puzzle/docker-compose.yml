@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 7193355112
+      POSTGRES_DB: memory
+    ports:
+      - "5743:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  app:
+    build: .
+    ports:
+      - "8484:8080"
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: jdbc:postgresql://127.0.0.1:5743/memory
+      DATABASE_USER: postgres
+      DATABASE_PASSWORD: 7193355112
+
+volumes:
+  postgres_data:

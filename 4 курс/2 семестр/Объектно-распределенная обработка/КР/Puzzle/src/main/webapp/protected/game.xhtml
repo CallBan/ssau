@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <title><ui:insert name="title">Игра пазл</ui:insert></title>
+    <h:outputStylesheet name="css/gamePage.css" />
+    <h:outputStylesheet name="css/style.css" />
+    <script>
+    let timer;
+    let seconds = 0;
+
+    function startTimer() {
+        // Если таймер уже существует, останавливаем его
+        if (timer != null) {
+            clearInterval(timer);
+            seconds = 0;
+        }
+        
+        // Запускаем новый таймер
+        timer = setInterval(function() {
+            seconds++;
+            document.getElementById('gameForm:timer').innerText = "Время: " + seconds + " секунд";
+        }, 1000);
+    }
+
+    // Функция для перезагрузки страницы после завершения игры
+    function reloadPage() {
+        location.reload();
+    }
+</script>
+    <style>
+    	
+    </style>
+</h:head>
+<h:body>
+<ui:include src="/resources/components/menu.xhtml" />
+
+    <h:form id="gameForm">
+
+        <!-- Ввод количества пар -->
+		<h:panelGroup rendered="#{!gameBean.gameStarted}">
+		    <h:panelGrid columns="2">
+		        <h:outputLabel value="Введите количество пар:" for="numPairs" />
+		        <h:inputText id="numPairs" value="#{gameBean.numberOfPairs}" required="true" 
+		                     styleClass="input-field" 
+		                     validatorMessage="Введите корректное количество пар (от 5 до 25).">
+		            <f:validateLongRange minimum="5" maximum="25" />
+		        </h:inputText>
+		        
+		        <!-- Кнопка для начала игры -->
+		        <h:commandButton value="Начать игру" action="#{gameBean.startNewGame}" styleClass="start-button" 
+		                         onclick="startTimer();">
+		            <f:ajax execute="@form" render="gameForm" />
+		        </h:commandButton>
+		    </h:panelGrid>
+		    
+		    <!-- Сообщения об ошибках -->
+		    <h:message for="numPairs" styleClass="error-message" />
+		</h:panelGroup>
+
+        <!-- Статистика игры (время, количество ходов, оставшиеся пары) -->
+        <h:panelGroup rendered="#{gameBean.gameStarted}" styleClass="game-statistics">
+            <h:outputText value="Ходы: #{gameBean.getCountMove()}" styleClass="stat-text" />
+            <h:outputText value="Оставшиеся пары: #{gameBean.getRemainingPars()}" styleClass="stat-text" />
+            <h:outputText id="timer" value="Время: 0 секунд" styleClass="stat-text" />
+        </h:panelGroup>
+
+        <!-- Игровое поле -->
+        <h:panelGroup rendered="#{gameBean.gameStarted}"> 
+            <h:panelGrid columns="4" styleClass="card-grid" 
+                         data-columns="#{gameBean.getCardGridColumns()}">
+                <ui:repeat value="#{gameBean.cards}" var="card">
+                    <h:commandButton value="#{card.revealed ? card.id : '?'}"
+                                     action="#{gameBean.selectCard(card)}"
+                                     disabled="#{card.revealed || card.matched}"
+                                     styleClass="#{card.matched ? 'card-button matched' : (card.revealed ? 'card-button revealed' : 'card-button unmatched')}">
+                        <f:ajax execute="@this" render="gameForm"/>
+                    </h:commandButton>
+                </ui:repeat>
+            </h:panelGrid>
+        </h:panelGroup>
+		
+		<h:panelGroup rendered="#{gameBean.isGameComplete()}" styleClass="modal-overlay">
+            <div class="modal-content">
+                <h2>Игра завершена!</h2>
+                <p><strong>Время: </strong>#{gameBean.timeSpent} секунд</p>
+                <p><strong>Количество ходов: </strong>#{gameBean.getCountMove()}</p>
+                <p><strong>Отгадано пар: </strong>#{gameBean.numberOfPairs}</p>
+
+                <h:commandButton value="Начать новую игру" action="#{gameBean.resetGame()}" styleClass="reset-button" />
+            </div>
+        </h:panelGroup>
+
+        
+    </h:form>
+</h:body>
+</html>

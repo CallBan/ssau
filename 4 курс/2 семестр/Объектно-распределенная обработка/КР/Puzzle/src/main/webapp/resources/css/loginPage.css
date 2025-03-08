@@ -1,0 +1,91 @@
+body {
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Высота на весь экран */
+            margin: 0;
+        }
+
+        .headerButton {
+            display: flex;
+        }
+
+        .auth-button {
+            flex: 1; /* Каждая кнопка занимает равное пространство */
+            border: none;
+            background-color: #FFD6BA; /* Цвет фона кнопок */
+            color: #E97425; /* Цвет текста */
+            padding: 15px; /* Отступы внутри кнопок */
+            font-size: 16px; /* Размер шрифта */
+            cursor: pointer; /* Курсор при наведении */
+            transition: background-color 0.3s; /* Плавный переход цвета фона */
+            border-right: 1px solid white; /* Разделительная линия между кнопками */
+        }
+
+        .auth-button:last-child {
+            border-right: none; /* Убираем разделительную линию у последней кнопки */
+        }
+
+        .auth-button:hover {
+            background-color: #FFA76B; /* Цвет фона при наведении */
+        }
+
+        .auth-button.active {
+        	color: white;
+            background-color: #E97425; /* Цвет фона для активной кнопки */
+        }
+
+        .form-container {
+			display-flex: column;
+            width: 360px;
+           	justify-content: center;
+            background-color: white; /* Цвет фона формы */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень для формы */
+            padding: 20px; /* Отступы внутри формы */
+        }
+
+        .field-input {
+            width: 300px; /* Поля ввода занимают всю ширину */
+            padding: 10px; /* Отступы внутри полей */
+            margin-top: 10px; /* Отступ сверху */
+            border: 1px solid #ccc; /* Цвет границы */
+            border-radius: 5px; /* Скругление углов полей */
+            font-size: 16px; /* Размер шрифта */
+            transition: border-color 0.3s; /* Плавный переход цвета границы */
+        }
+
+        .field-input:focus {
+            border-color: #FFA76B; /* Цвет границы при фокусе */
+            outline: none; /* Убираем стандартное выделение */
+        }
+
+        .error {
+            color: red; /* Цвет для сообщений об ошибках */
+            font-size: 14px; /* Размер шрифта для сообщений об ошибках */
+        }
+
+        .in-button {
+            background-color: #FFD6BA; /* Цвет кнопки "Войти" и "Зарегистрироваться" */
+            color: #E97425; /* Цвет текста */
+            padding: 10px; /* Отступы внутри кнопок */
+            border: none; /* Убираем границу */
+            border-radius: 5px; /* Скругление углов кнопок */
+            cursor: pointer; /* Курсор при наведении */
+            margin-top: 15px; /* Отступ сверху от кнопок */
+            width: 50%; /* Занимает всю ширину */
+            transition: background-color 0.3s; /* Плавный переход цвета фона */
+        }
+        .form-content{
+        	display: flex;
+			flex-direction: column; /* Расположение элементов в колонку */
+        	justify-content: center;
+        	align-items: center; /* Центрирование элементов по горизонтали */
+        }
+
+        .in-button:hover {
+            background-color: #FFA76B; /* Цвет фона при наведении на кнопки */
+        }
+        .content-center {
+        	width: 400px;
+        }

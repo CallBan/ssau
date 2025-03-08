@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      lang="ru">
+
+<h:head>
+    <title><ui:insert name="title">Справочная информация о системе "Пазл"</ui:insert></title>
+    <h:outputStylesheet name="css/style.css" />
+    <style>
+    img {
+        width: 500px;
+        height: auto;
+    }
+    
+    body {
+    	color: #E97425;
+    }
+    </style>
+</h:head>
+
+<body>
+    <h1>Справочная информация о системе "Пазл"</h1>
+
+    <h2>Начало работы с приложением</h2>
+    <p>Для начала работы с игрой "Пазл" необходимо авторизоваться, введя логин и пароль, либо зарегистрироваться.</p>
+    <p>После успешной авторизации игрок попадёт на страницу профиля, где доступны личная статистика и рейтинг игроков.</p>
+    <img src="/Pazl/resources/imgs/auth.png" />
+
+    <h2>Страница статистики</h2>
+    <p>В разделе "Моя статистика" отображаются личные достижения игрока. 
+       В разделе "Рейтинг" можно увидеть список лучших игроков с их общим числом очков.</p>
+    <img src="/Pazl/resources/imgs/personalStatistic.png" />
+    <img src="/Pazl/resources/imgs/rating.png" />
+
+    <h2>Страница игры</h2>
+    <p>При нажатии на кнопку "Играть" открывается страница игры, где игроку необходимо указать количество пар карточек.</p>
+    <img src="/Pazl/resources/imgs/gameSetup.png" />
+
+    <h2>Игровой процесс</h2>
+    <p>Игрок открывает карточки и ищет совпадающие пары. Игра продолжается, пока все пары не будут найдены.</p>
+    <img src="/Pazl/resources/imgs/gameInterface.png" />
+
+    <h2>Завершение игры</h2>
+    <p>После завершения игры появляется модальное окно с результатами и возможностью начать новую игру.</p>
+    <img src="/Pazl/resources/imgs/gameResults.png" />
+
+    <h2>Дополнительные страницы</h2>
+    <p>В разделе "О системе" содержится информация об игре, а в разделе "О разработчике" – сведения о создателях.</p>
+    <img src="/Pazl/resources/imgs/aboutSystem.png" />
+    <img src="/Pazl/resources/imgs/aboutDeveloper.png" />
+
+    <footer>
+        <p>&copy; 2025 "Пазл". Все права защищены.</p>
+    </footer>
+</body> 
+</html>

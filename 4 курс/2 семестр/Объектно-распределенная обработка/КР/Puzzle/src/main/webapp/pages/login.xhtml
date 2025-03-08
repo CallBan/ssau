@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+      
+<h:head>
+    <title><ui:insert name="title">Вход/Регистрация</ui:insert></title>
+    <h:outputStylesheet name="css/style.css" />
+    <h:outputStylesheet name="css/loginPage.css" />
+</h:head>
+
+<body>
+    <div class="content-center">
+        <h:form>
+            <div class="headerButton">
+                <h:commandButton style="width: 250px" value="Вход" action="#{userSession.showLoginForm()}" 
+                                 styleClass="auth-button #{userSession.loginFormVisible ? 'active' : ''}">
+                    <f:ajax execute="@this" render="@form" />
+                </h:commandButton>
+                <h:commandButton style="width: 250px" value="Регистрация" action="#{userSession.showRegisterForm()}" 
+                                 styleClass="auth-button #{userSession.registerFormVisible ? 'active' : ''}">
+                    <f:ajax execute="@this" render="@form" />
+                </h:commandButton>
+            </div>
+
+            <div class="form-container">
+                <h:panelGroup styleClass="form-content" rendered="#{userSession.loginFormVisible}">
+                    <div><div><label for="username">Логин</label></div>
+                    <h:inputText id="username" styleClass="field-input" value="#{userSession.username}" placeholder="Username" required="true" requiredMessage="Логин обязателен." />
+                    </div>
+                    
+                    <div><div style="margin-top:10px;"><label for="password">Пароль</label></div>
+                    <h:inputSecret id="password" styleClass="field-input" value="#{userSession.password}" placeholder="Password" required="true" requiredMessage="Пароль обязателен." />
+                    </div>
+                    <h:messages class="error"/>
+                    <div></div>
+                    <h:commandButton styleClass="in-button" value="Войти" action="#{userSession.login()}" ajax="true"/>
+                </h:panelGroup>
+
+                <h:panelGroup styleClass="form-content" rendered="#{userSession.registerFormVisible}">
+                    <div><div><label for="registerUsername">Логин</label></div>
+                    <h:inputText id="registerUsername" styleClass="field-input" value="#{userSession.username}" placeholder="Username" required="true" 
+                                 requiredMessage="Логин обязателен." />
+					</div>
+                     <div><div style="margin-top:10px;"><label for="registerPassword">Пароль</label></div>
+                    <h:inputSecret id="registerPassword" styleClass="field-input" value="#{userSession.password}" placeholder="Password" required="true" 
+                                   requiredMessage="Пароль обязателен." />
+					</div>
+                     <div><div style="margin-top:10px;"><label for="confirmPassword">Подтверждение пароля</label></div>
+                    <h:inputSecret id="confirmPassword" styleClass="field-input" value="#{userSession.confirmPassword}" placeholder="Confirm Password" required="true" 
+                                   requiredMessage="Подтверждение пароля обязательно." />
+					</div>
+                    <h:messages class="error"/>
+                    <h:commandButton styleClass="in-button" value="Зарегистрироваться" action="#{userSession.register()}" ajax="true"/>
+                </h:panelGroup>
+            </div>
+        </h:form>
+    </div>
+</body>
+</html>

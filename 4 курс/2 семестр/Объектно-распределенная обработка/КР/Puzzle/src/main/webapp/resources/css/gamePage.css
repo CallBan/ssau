@@ -1,0 +1,170 @@
+/* Стиль для поля ввода количества пар */
+.input-field {
+    width: 200px;
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Стили для блока статистики */
+.game-statistics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Стили для каждого элемента статистики */
+.stat-text {
+    font-size: 1.2em;
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    color: #333;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.stat-text:hover {
+    background-color: #e7e7e7;
+    transform: scale(1.05);
+}
+
+/* Стиль для панели с карточками */
+.card-grid {
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/* Адаптивное изменение количества колонок в зависимости от количества карт */
+.card-grid[data-columns="2"] {
+    grid-template-columns: repeat(2, 100px);
+}
+
+.card-grid[data-columns="3"] {
+    grid-template-columns: repeat(3, 100px);
+}
+
+.card-grid[data-columns="4"] {
+    grid-template-columns: repeat(4, 100px);
+}
+
+.card-grid[data-columns="5"] {
+    grid-template-columns: repeat(5, 100px);
+}
+
+.card-grid[data-columns="6"] {
+    grid-template-columns: repeat(6, 100px);
+}
+
+/* Стиль для карточек */
+.card-button {
+    width: 100px;
+    height: 100px;
+    font-size: 2em;
+    margin: 5px;
+    transition: transform 0.5s ease;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: #FFD6BA;
+    color: #E97425;
+}
+
+/* Эффект при наведении на карточки */
+.card-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Стиль для совпавших карточек */
+.matched {
+    background-color: lightgreen;
+    color: white;
+}
+
+/* Стиль для несовпавших карточек */
+.unmatched {
+    background-color: lightcoral;
+    color: white;
+}
+
+
+/* Стиль для информации о завершении игры */
+.game-info {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* Стили для кнопок старта и сброса */
+.start-button, .reset-button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Стили для кнопки старта */
+.start-button {
+    background-color: #FFD6BA;
+    color: #E97425;
+}
+
+.start-button:hover {
+    background-color: #FFA76B;
+}
+
+/* Стили для кнопки сброса */
+.reset-button {
+    background-color: #FFD6BA;
+    color: #E97425;
+}
+
+.reset-button:hover {
+    background-color: #FFA76B;
+}
+
+.modal-overlay {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+        .modal-content {
+        	display: flex;
+		    background-color: white;
+		    padding: 20px;
+		    align-items: center;
+		    flex-direction: column;
+		    border-radius: 10px;
+		    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+		    justify-content: center;
+		    vertical-align: baseline;
+		    width: 400px;
+		    height: 400px;
+        }
+        .modal-content h2 {
+            margin-bottom: 20px;
+        }

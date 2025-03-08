@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+    <title><ui:insert name="title">Профиль пользователя</ui:insert></title>
+    <h:outputStylesheet name="css/profilePage.css" />
+    <h:outputStylesheet name="css/style.css" />
+    <style>
+        
+    </style>
+</h:head>
+
+<body>
+    <ui:include src="/resources/components/menu.xhtml" />
+    <h:outputText styleClass="profileText" value="Приветствую, #{userSession.username}!" />
+    
+    <h:form>
+        <h:commandButton value="Моя Статистика" action="#{profileBean.loadUserAttempts()}" styleClass="profileButton">
+            <f:ajax render="profileStats" />
+        </h:commandButton>
+        <h:commandButton value="Рейтинг" action="#{profileBean.loadUserScores()}" styleClass="profileButton">
+            <f:ajax render="profileStats" />
+        </h:commandButton>
+    </h:form>
+
+    <!-- Вывод статистики или рейтинга -->
+    <h:panelGroup id="profileStats" styleClass="profileStatsPanel">
+        <!-- Панель с таблицей статистики -->
+        <h:panelGroup id="userStatsPanel" rendered="#{not empty profileBean.userAttempts and profileBean.showStatistic1}">
+            <h3 class="sectionHeader">Личная Статистика</h3>
+            <h:dataTable value="#{profileBean.userAttempts}" var="attempt" styleClass="profileTable">
+                <h:column>
+                    <f:facet name="header">Количество пар</f:facet>
+                    #{attempt.numPairs}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Количество Ходов</f:facet>
+                    #{attempt.moves}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Время в секундах</f:facet>
+                    #{attempt.timeSpent}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Успех</f:facet>
+                    #{attempt.getResult()}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Счет</f:facet>
+                    #{attempt.score}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Дата Игры</f:facet>
+                    #{attempt.getFormattedGameDate()}
+                </h:column>
+            </h:dataTable>
+        </h:panelGroup>
+
+        <!-- Панель с таблицей рейтинга -->
+        <h:panelGroup id="userScorePanel" rendered="#{not empty profileBean.userScores and !profileBean.showStatistic1}">
+            <h3 class="sectionHeader">Рейтинг</h3>
+            <h:dataTable value="#{profileBean.userScores}" var="userScore" styleClass="profileTable">
+                <h:column>
+                    <f:facet name="header">#</f:facet>
+                    #{userScore.rank}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Имя Пользователя</f:facet>
+                    #{userScore.username}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Общий Счет</f:facet>
+                    #{userScore.totalScore}
+                </h:column>
+            </h:dataTable>
+        </h:panelGroup>
+
+        <!-- Сообщение, если статистика или рейтинг отсутствует -->
+        <h:panelGroup rendered="#{empty profileBean.userAttempts and empty profileBean.userScores}">
+            <h3 class="noStatsMessage">Нет доступной статистики или рейтинга.</h3>
+        </h:panelGroup>
+    </h:panelGroup>
+</body>
+</html>
