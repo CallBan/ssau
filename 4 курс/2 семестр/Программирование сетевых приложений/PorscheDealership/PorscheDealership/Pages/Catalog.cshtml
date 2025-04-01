@@ -1,0 +1,80 @@
+﻿@page
+@model CatalogModel
+@{
+    ViewData["Title"] = "Porsche Dealership - Модели";
+}
+
+@section Styles {
+
+    <link rel="stylesheet" href="@Url.Content("~/styles/catalog.css")" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+}
+
+<main>
+    <aside class="filters">
+        <form id="filter-form">
+            <h3>Фильтры</h3>
+            <label for="model">Модель:</label>
+            <select id="model" name="model">
+                <option value="">Все модели</option>
+                <option value="911">911</option>
+                <option value="Cayman">Cayman</option>
+                <option value="Taycan">Taycan</option>
+                <option value="Macan">Macan</option>
+                <option value="Cayenne">Cayenne</option>
+                <option value="Panamera">Panamera</option>
+            </select>
+
+            <label for="price-min">Цена от (₽):</label>
+            <input type="number" id="price-min" name="price-min" placeholder="Минимум" min="0" />
+
+            <label for="price-max">Цена до (₽):</label>
+            <input type="number" id="price-max" name="price-max" placeholder="Максимум" min="0" />
+
+            <label for="body-type">Тип кузова:</label>
+            <select id="body-type" name="body-type">
+                <option value="">Все типы</option>
+                <option value="Купе">Купе</option>
+                <option value="Седан">Седан</option>
+                <option value="Внедорожник">Внедорожник</option>
+                <option value="Кабриолет">Кабриолет</option>
+            </select>
+
+            <label for="fuel-type">Тип топлива:</label>
+            <select id="fuel-type" name="fuel-type">
+                <option value="">Все виды</option>
+                <option value="Бензин">Бензин</option>
+                <option value="Дизель">Дизель</option>
+                <option value="Электро">Электро</option>
+                <option value="Гибрид">Гибрид</option>
+            </select>
+        </form>
+    </aside>
+
+    <div class="catalog-container">
+        <div class="search-bar">
+            <label for="search">Поиск:</label>
+            <input type="text" id="search" name="search" placeholder="Введите название модели" />
+        </div>
+
+        <div class="catalog-products">
+        </div>
+        <button class="show-more-btn">Показать ещё</button>
+    </div>
+
+</main>
+
+
+<div id="carModal" class="modal">
+    <div class="modal-container">
+        <div class="modal-content">
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="~/scripts/catalog.js"></script>
+}

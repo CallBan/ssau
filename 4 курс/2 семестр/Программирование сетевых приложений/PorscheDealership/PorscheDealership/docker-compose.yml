@@ -1,0 +1,41 @@
+version: '3.4'
+
+services:
+  webapp:
+    build: .
+    container_name: razor_app
+    ports:
+      - "8080:8080"
+    depends_on:
+      mssql:
+        condition: service_healthy
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=mssql,1433;Database=PorscheDealership;User Id=sa;Password=Mssql123!;TrustServerCertificate=True;MultipleActiveResultSets=true
+    networks:
+      - app-network
+
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: mssql
+    ports:
+        - "1433:1433"
+    environment:
+        SA_PASSWORD: "Mssql123!"
+        ACCEPT_EULA: "Y"
+    volumes:
+        - sql_data:/var/opt/mssql
+    healthcheck:
+        test: ["CMD", "/opt/mssql-tools18/bin/sqlcmd", "-S", "localhost", "-U", "sa", "-P", "Mssql123!", "-C", "-Q", "CREATE DATABASE PorscheDealership"]
+        interval: 1s
+        timeout: 10s
+        retries: 40
+        start_period: 5s
+    networks:
+        - app-network
+
+volumes:
+  sql_data:
+
+networks:
+  app-network:
+    driver: bridge

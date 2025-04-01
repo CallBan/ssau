@@ -1,0 +1,393 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PorscheDealership.bundle.scp.css",
+      "PackagePath": "staticwebassets\\PorscheDealership.wn4e4kz5gh.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\icons\\PorscheLogo.png",
+      "PackagePath": "staticwebassets\\icons\\PorscheLogo.png"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\icons\\icons8-вконтакте.svg",
+      "PackagePath": "staticwebassets\\icons\\icons8-вконтакте.svg"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\icons\\icons8-ютуб.svg",
+      "PackagePath": "staticwebassets\\icons\\icons8-ютуб.svg"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\icons\\porsche-icon.svg",
+      "PackagePath": "staticwebassets\\icons\\porsche-icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\img\\911.jpg",
+      "PackagePath": "staticwebassets\\img\\911.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\img\\Cayman.png",
+      "PackagePath": "staticwebassets\\img\\Cayman.png"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\img\\Porsche-banner.jpg",
+      "PackagePath": "staticwebassets\\img\\Porsche-banner.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\img\\Taycan.jpg",
+      "PackagePath": "staticwebassets\\img\\Taycan.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\img\\cars\\1.jpg",
+      "PackagePath": "staticwebassets\\img\\cars\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\img\\cars\\10.png",
+      "PackagePath": "staticwebassets\\img\\cars\\10.png"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\img\\cars\\2.png",
+      "PackagePath": "staticwebassets\\img\\cars\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\img\\cars\\3.jpg",
+      "PackagePath": "staticwebassets\\img\\cars\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\img\\cars\\4.png",
+      "PackagePath": "staticwebassets\\img\\cars\\4.png"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\img\\cars\\5.png",
+      "PackagePath": "staticwebassets\\img\\cars\\5.png"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\img\\cars\\6.jpg",
+      "PackagePath": "staticwebassets\\img\\cars\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\img\\cars\\7.jpg",
+      "PackagePath": "staticwebassets\\img\\cars\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\img\\cars\\8.png",
+      "PackagePath": "staticwebassets\\img\\cars\\8.png"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\img\\cars\\9.jpg",
+      "PackagePath": "staticwebassets\\img\\cars\\9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\img\\cars\\product.png",
+      "PackagePath": "staticwebassets\\img\\cars\\product.png"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\img\\cars\\product2.png",
+      "PackagePath": "staticwebassets\\img\\cars\\product2.png"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\img\\cars\\product3.png",
+      "PackagePath": "staticwebassets\\img\\cars\\product3.png"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\img\\map.png",
+      "PackagePath": "staticwebassets\\img\\map.png"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\img\\service\\1.jpg",
+      "PackagePath": "staticwebassets\\img\\service\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\scripts\\catalog.js",
+      "PackagePath": "staticwebassets\\scripts\\catalog.js"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\scripts\\site.js",
+      "PackagePath": "staticwebassets\\scripts\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\styles\\catalog.css",
+      "PackagePath": "staticwebassets\\styles\\catalog.css"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\styles\\contacts.css",
+      "PackagePath": "staticwebassets\\styles\\contacts.css"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\styles\\history.css",
+      "PackagePath": "staticwebassets\\styles\\history.css"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\styles\\product.css",
+      "PackagePath": "staticwebassets\\styles\\product.css"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\styles\\service.css",
+      "PackagePath": "staticwebassets\\styles\\service.css"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\styles\\site.css",
+      "PackagePath": "staticwebassets\\styles\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\styles\\style.css",
+      "PackagePath": "staticwebassets\\styles\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\styles\\trade-in.css",
+      "PackagePath": "staticwebassets\\styles\\trade-in.css"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.PorscheDealership.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.PorscheDealership.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.PorscheDealership.props",
+      "PackagePath": "build\\PorscheDealership.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.PorscheDealership.props",
+      "PackagePath": "buildMultiTargeting\\PorscheDealership.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.PorscheDealership.props",
+      "PackagePath": "buildTransitive\\PorscheDealership.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

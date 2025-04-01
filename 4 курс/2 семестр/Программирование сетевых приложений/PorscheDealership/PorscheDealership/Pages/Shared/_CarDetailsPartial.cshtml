@@ -1,0 +1,13 @@
+﻿@model Car
+
+<div class="modal-header">
+    <h2>@Model.Model</h2>
+    <span class="close">&times;</span>
+</div>
+<div class="modal-body">
+    <img src="data:image/jpeg;base64,@Convert.ToBase64String(Model.Image)" alt="@Model.Model" class="modal-image" />
+    <p><strong>Цена:</strong> @Model.Price.ToString("#,##0 ₽")</p>
+    <p><strong>Год выпуска:</strong> @Model.Year</p>
+    <p><strong>Тип кузова:</strong> @Model.BodyType</p>
+    <p><strong>Тип топлива:</strong> @Model.FuelType</p>
+</div>

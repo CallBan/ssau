@@ -1,0 +1,57 @@
+﻿@page
+@model CatalogModel
+@{
+    ViewData["Title"] = "Porsche Dealership - Обслуживание";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="styles/service.css" />
+}
+
+<main class="service-main">
+    <section class="service-intro">
+        <h2 class="service-section-title">Почему выбирают наш сервис?</h2>
+        <div class="intro-content">
+            <img src="img/service/1.jpg" alt="Сервисный центр Porsche" class="intro-image">
+            <p class="service-text">
+                Наш автосалон предлагает высококачественное обслуживание автомобилей Porsche. Мы используем только оригинальные запчасти
+                и новейшее оборудование, чтобы гарантировать надежность, производительность и комфорт вашего автомобиля.
+            </p>
+        </div>
+    </section>
+
+    <section class="service-benefits">
+        <h2 class="service-section-title">Преимущества обслуживания у нас</h2>
+        <div class="benefits-grid">
+            <div class="benefit-item">
+                <h3 class="benefit-title">Оригинальные запчасти</h3>
+                <p class="benefit-text">Только сертифицированные детали для максимальной долговечности и производительности.</p>
+            </div>
+            <div class="benefit-item">
+                <h3 class="benefit-title">Квалифицированные специалисты</h3>
+                <p class="benefit-text">Наши мастера прошли обучение в Porsche и имеют большой опыт работы с премиум-автомобилями.</p>
+            </div>
+            <div class="benefit-item">
+                <h3 class="benefit-title">Современное оборудование</h3>
+                <p class="benefit-text">Передовые технологии диагностики и ремонта обеспечивают точность и эффективность.</p>
+            </div>
+            <div class="benefit-item">
+                <h3 class="benefit-title">Гарантия качества</h3>
+                <p class="benefit-text">Мы предоставляем гарантию на все выполненные работы и установленные запчасти.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-types">
+        <h2 class="service-section-title">Виды услуг</h2>
+        <ul class="service-list">
+            <li>Плановое техническое обслуживание</li>
+            <li>Диагностика и ремонт двигателя</li>
+            <li>Обслуживание тормозной системы</li>
+            <li>Ремонт коробки передач</li>
+            <li>Шиномонтаж и балансировка</li>
+            <li>Установка оригинальных аксессуаров</li>
+        </ul>
+    </section>
+
+</main>

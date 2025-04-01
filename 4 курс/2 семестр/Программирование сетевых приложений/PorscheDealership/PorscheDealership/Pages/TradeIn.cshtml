@@ -1,0 +1,116 @@
+﻿@page
+@model TradeInModel
+@{
+    ViewData["Title"] = "Porsche Dealership - TRADE-IN";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="styles/trade-in.css" />
+}
+
+<main>
+    <div class="form-container">
+        <h1>TRADE-IN</h1>
+        <form id="trade-in-form" method="post" enctype="multipart/form-data">
+            <!-- Общие поля -->
+            <div class="form-group">
+                <label for="owner-name">Имя владельца:</label>
+                <input type="text"
+                       id="owner-name"
+                       name="Input.OwnerName"
+                       placeholder="Иван Иванов"
+                       required
+                       pattern="[A-Za-zА-Яа-яЁё\s]{2,50}">
+                <div class="error" id="owner-name-error"></div>
+            </div>
+
+            <!-- Поля из фильтров -->
+            <div class="form-group">
+                <label for="model">Модель:</label>
+                <input type="text"
+                       id="model"
+                       name="Input.Model"
+                       placeholder="Porsche 911 Turbo S"
+                       required">
+                <div class="error" id="model-error"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="price">Цена (₽):</label>
+                <input type="number"
+                       id="price"
+                       name="Input.Price"
+                       placeholder="10000000"
+                       min="100"
+                       required>
+                <div class="error" id="price-error"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="body-type">Тип кузова:</label>
+                <select id="body-type" name="Input.BodyType" required>
+                    <option value="">Выберите тип</option>
+                    <option value="Купе">Купе</option>
+                    <option value="Седан">Седан</option>
+                    <option value="Внедорожник">Внедорожник</option>
+                    <option value="Кабриолет">Кабриолет</option>
+                </select>
+                <div class="error" id="body-type-error"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="fuel-type">Тип топлива:</label>
+                <select id="fuel-type" name="Input.FuelType" required>
+                    <option value="">Выберите тип</option>
+                    <option value="Бензин">Бензин</option>
+                    <option value="Дизель">Дизель</option>
+                    <option value="Электро">Электро</option>
+                    <option value="Гибрид">Гибрид</option>
+                </select>
+                <div class="error" id="fuel-type-error"></div>
+            </div>
+
+            <!-- Дополнительные поля -->
+            <div class="form-group">
+                <label for="year">Год выпуска:</label>
+                <input type="number"
+                       id="year"
+                       name="Input.Year"
+                       placeholder="2020"
+                       min="2000"
+                       max="@DateTime.Now.Year"
+                       required>
+                <div class="error" id="year-error"></div>
+            </div>
+
+            @* <div class="form-group"> *@
+            @*     <label for="mileage">Пробег (км):</label> *@
+            @*     <input type="number" *@
+            @*            id="mileage" *@
+            @*            name="Input.Mileage" *@
+            @*            placeholder="50000" *@
+            @*            min="0" *@
+            @*            max="500000" *@
+            @*            required> *@
+            @*     <div class="error" id="mileage-error"></div> *@
+            @* </div> *@
+
+            <div class="form-group">
+                <label for="car-photo">Фото автомобиля:</label>
+                <input type="file"
+                       id="car-photo"
+                       name="Input.CarPhoto"
+                       accept=".jpg,.jpeg,.png" />
+                <div class="error" id="car-photo-error"></div>
+            </div>
+
+            <button type="submit">Отправить данные</button>
+            <div class="success-message" id="success-message">
+                @if (!string.IsNullOrEmpty(Model.SuccessMessage))
+                {
+                    <span>@Model.SuccessMessage</span>
+                }
+            </div>
+        </form>
+    </div>
+</main>

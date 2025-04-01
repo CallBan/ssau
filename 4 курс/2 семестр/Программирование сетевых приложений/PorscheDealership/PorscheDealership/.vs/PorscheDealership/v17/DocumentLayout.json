@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{26AF28B6-8724-401A-B119-E707E8FAE32F}|PorscheDealership\\PorscheDealership.csproj|c:\\users\\dmitry\\documents\\github\\porschedealership\\porschedealership\\porschedealership\\pages\\tradein.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{26AF28B6-8724-401A-B119-E707E8FAE32F}|PorscheDealership\\PorscheDealership.csproj|solutionrelative:porschedealership\\pages\\tradein.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26AF28B6-8724-401A-B119-E707E8FAE32F}|PorscheDealership\\PorscheDealership.csproj|c:\\users\\dmitry\\documents\\github\\porschedealership\\porschedealership\\porschedealership\\pages\\catalog.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26AF28B6-8724-401A-B119-E707E8FAE32F}|PorscheDealership\\PorscheDealership.csproj|solutionrelative:porschedealership\\pages\\catalog.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26AF28B6-8724-401A-B119-E707E8FAE32F}|PorscheDealership\\PorscheDealership.csproj|c:\\users\\dmitry\\documents\\github\\porschedealership\\porschedealership\\porschedealership\\wwwroot\\scripts\\catalog.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{26AF28B6-8724-401A-B119-E707E8FAE32F}|PorscheDealership\\PorscheDealership.csproj|solutionrelative:porschedealership\\wwwroot\\scripts\\catalog.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Catalog.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\Pages\\Catalog.cshtml.cs",
+              "RelativeDocumentMoniker": "PorscheDealership\\Pages\\Catalog.cshtml.cs",
+              "ToolTip": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\Pages\\Catalog.cshtml.cs",
+              "RelativeToolTip": "PorscheDealership\\Pages\\Catalog.cshtml.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAiwGgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T10:50:13.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "catalog.js",
+              "DocumentMoniker": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\scripts\\catalog.js",
+              "RelativeDocumentMoniker": "PorscheDealership\\wwwroot\\scripts\\catalog.js",
+              "ToolTip": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\wwwroot\\scripts\\catalog.js",
+              "RelativeToolTip": "PorscheDealership\\wwwroot\\scripts\\catalog.js",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAAwHIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-03-30T10:33:18.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TradeIn.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\Pages\\TradeIn.cshtml",
+              "RelativeDocumentMoniker": "PorscheDealership\\Pages\\TradeIn.cshtml",
+              "ToolTip": "C:\\Users\\Dmitry\\Documents\\GitHub\\PorscheDealership\\PorscheDealership\\PorscheDealership\\Pages\\TradeIn.cshtml",
+              "RelativeToolTip": "PorscheDealership\\Pages\\TradeIn.cshtml",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAqwGkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-30T10:29:42.893Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Porsche Dealership";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="@Url.Content("~/styles/style.css")" />
+}
+
+<main>
+    <section class="photo-zone">
+        <img src="@Url.Content("~/img/Porsche-banner.jpg")" alt="Фото" />
+    </section>
+
+    <section class="brand">
+        <h1 class="brand-title">Автомобили Porsche</h1>
+        <div class="brand-article-container">
+            <img src="@Url.Content("~/icons/PorscheLogo.png")" alt="porsche-logo" class="brand-article-logo" />
+            <article class="brand-article-content">
+                <h2 class="model-line-title">О бренде</h2>
+                <p>
+                    Porsche — это синоним спортивной элегантности и непревзойденной производительности.
+                    Более чем за восемьдесят лет компания создала репутацию, основанную на инновациях,
+                    высококачественных материалах и успехах в автоспорте. Этот опыт воплощается в каждом автомобиле,
+                    от легендарного 911 до электрического Taycan.
+                </p>
+            </article>
+        </div>
+        <hr />
+
+        <div class="model-line">
+            <h2 class="model-line-title">Модельный ряд автомобилей</h2>
+            <ul class="model-line-items">
+                <li class="model-card">
+                    <img src="@Url.Content("~/img/Cayman.png")" alt="Cayman" class="model-img" />
+                    <p>Cayman – идеальный спортивный автомобиль с отличной управляемостью и мощностью.</p>
+                </li>
+                <li class="model-card">
+                    <img src="@Url.Content("~/img/911.jpg")" alt="911" class="model-img" />
+                    <p>911 – культовый спорткар, сочетающий скорость, комфорт и легендарный дизайн.</p>
+                </li>
+                <li class="model-card">
+                    <img src="@Url.Content("~/img/Taycan.jpg")" alt="Taycan" class="model-img" />
+                    <p>Taycan – электрический спорткар с инновационными технологиями и потрясающей динамикой.</p>
+                </li>
+            </ul>
+            <a asp-page="/Catalog" class="all-models-btn">Все модели</a>
+        </div>
+    </section>
+</main>

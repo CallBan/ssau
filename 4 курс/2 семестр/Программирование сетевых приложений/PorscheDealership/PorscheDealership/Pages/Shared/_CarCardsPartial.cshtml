@@ -1,0 +1,12 @@
+﻿@model IEnumerable<Car>
+
+@foreach (var car in Model)
+{
+    <a href="javascript:void(0);" class="product-card-box" data-id="@car.Id">
+        <img src="data:image/jpeg;base64,@Convert.ToBase64String(car.Image)" alt="@car.Model" class="product-card-image" />
+        <div class="product-card-info">
+            <div class="product-card-title">@car.Model</div>
+            <strong class="product-card-price">от @car.Price.ToString("#,##0 ₽")</strong>
+        </div>
+    </a>
+}

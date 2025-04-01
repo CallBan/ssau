@@ -1,0 +1,231 @@
+/* Стили для боковой панели фильтров */
+.filters {
+    width: 20%;
+    padding: 15px;
+    /* background-color: #f9f9f9; */
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    float: left;
+    font-family: "Oswald", sans-serif;
+}
+
+.filters h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.filters label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.filters select,
+.filters input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.filters button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+}
+
+.filters button:hover {
+    background-color: #0056b3;
+}
+
+/* Стили для каталога продуктов */
+.catalog-products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px;
+    margin-left: 20%; /* Учитываем ширину панели фильтров */
+    box-sizing: border-box;
+    min-height: 500px;
+}
+
+.product-card-box {
+    width: calc(33.333% - 20px);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+/* .product-card-box:hover {
+    transform: scale(1.05);  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  
+} */
+
+.product-card-image {
+    width: 100%;
+    height: auto;
+}
+
+.product-card-info {
+    padding: 10px;
+}
+
+.product-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-features {
+    margin: 10px 0;
+    padding-left: 15px;
+    list-style-type: disc;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.product-features li {
+    margin-bottom: 5px;
+}
+
+.product-card-info strong {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+}
+
+.page-btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.page-btn:hover {
+    background-color: #444;
+}
+
+.page-btn.current {
+    background-color: #d50000;
+}
+
+.page-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    font-family: "Oswald", sans-serif;
+}
+.search-bar label {
+    margin-right: 10px;
+    font-size: 16px;
+}
+.search-bar input {
+    width: 300px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+
+/* Затемняющий фон модального окна */
+.modal {
+
+    font-family: "Oswald", sans-serif;
+    display: none; /* По умолчанию скрыто */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+}
+
+.modal-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+/* Контент модального окна */
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    max-width: 600px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Кнопка закрытия */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Изображение в модальном окне */
+.modal-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+
+.show-more-btn {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+
+    .show-more-btn:hover {
+        background-color: #444;
+    }
+
+
+

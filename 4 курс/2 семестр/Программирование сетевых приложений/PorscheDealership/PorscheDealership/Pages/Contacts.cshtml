@@ -1,0 +1,90 @@
+﻿@page
+@model CatalogModel
+@{
+    ViewData["Title"] = "Porsche Dealership - Контакты";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="styles/contacts.css" />
+}
+
+<main class="contact-main">
+    <section class="contact-info">
+        <h2 class="contact-section-title">Наши контактные данные</h2>
+        <p><strong>Адрес:</strong> г. Москва, ул. Примерная, д. 15</p>
+        <p>
+            <strong>Телефон:</strong>
+            <a href="tel:+78001234567">+7 (999) 999-99-99</a>
+        </p>
+        <p>
+            <strong>Email:</strong>
+            <a href="mailto:info@porsche-salon.ru">info@porsche-salon.ru</a>
+        </p>
+        <p><strong>Часы работы:</strong></p>
+        <ul>
+            <li>Понедельник – Пятница: 9:00 – 20:00</li>
+            <li>Суббота – Воскресенье: 10:00 – 18:00</li>
+        </ul>
+    </section>
+
+    <section class="contact-map">
+        <h2 class="contact-section-title">Как нас найти</h2>
+        <div class="map-container">
+            <p>
+                Наш автосалон расположен в удобном месте с легким
+                доступом. Посмотрите карту ниже, чтобы найти нас:
+            </p>
+            <img src="img/map.png"
+                 alt="Карта расположения автосалона"
+                 class="map-image" />
+        </div>
+    </section>
+
+    <section class="contact-form-section">
+        <h2 class="contact-section-title">Напишите нам</h2>
+        <p>
+            Порше Центр Самара – официальный дилер Porsche в Самарской
+            области. <br />Для Вас модели автомобилей Porsche в
+            различных комплектациях на максимально привлекательных
+            условиях. Приобрести новый Porsche 2022 года можно в кредит,
+            лизинг или по программе Трейд-Ин.<br />
+            Уточнить технические характеристики, цену и наличие
+            автомобилей в интересующей комплектации Вы можете у
+            специалистов отдела продаж нашей компании или заполнив
+            заявку на обратный звонок.<br />
+            Порше Центр Самара предлагает техническое и сервисное
+            обслуживание автомобилей Porsche.<br />
+            Наши специалисты сервисного центра Porsche сориентируют по
+            стоимости ТО, помогут подобрать оригинальные запасные части
+            для автомобилей Porsche и аксессуары Porsche Lifestyle.<br />
+            А также подготовят Ваш Porsche к новому сезону или к
+            путешествию.<br />
+            Кузовной ремонт автомобилей Porsche.<br />
+            К Вашим услугам – крытая автостоянка на территории нашего
+            дилерского центра. В командировку или в отпуск отправляйтесь
+            без забот - Ваш автомобиль Porsche на ответственном
+            хранении.<br />Мы всегда рады помочь вам! Оставьте свои
+            контактные данные и вопрос в форме ниже, и мы свяжемся с
+            вами в ближайшее время.
+        </p>
+        <form class="contact-form">
+            <div class="form-row">
+                <input type="text"
+                       name="name"
+                       placeholder="Ваше имя"
+                       class="form-input"
+                       required />
+                <input type="email"
+                       name="email"
+                       placeholder="Ваш email"
+                       class="form-input"
+                       required />
+            </div>
+            <textarea name="message"
+                      placeholder="Ваше сообщение"
+                      class="form-textarea"
+                      required></textarea>
+            <button type="submit" class="form-button">Отправить</button>
+        </form>
+    </section>
+</main>

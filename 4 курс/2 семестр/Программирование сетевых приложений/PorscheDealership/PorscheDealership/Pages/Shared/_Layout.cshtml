@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <title>Porsche Dealership</title>
+
+    <!-- Основные стили -->
+    <link rel="stylesheet" href="@Url.Content("~/styles/style.css")" />
+
+    <!-- Дополнительные стили, если требуются -->
+    @RenderSection("Styles", required: false)
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="@Url.Content("~/icons/porsche-icon.svg")" alt="Logo" class="our-logo" />
+            <ul>
+                <li class="nav-item"><a asp-page="/Index">Главная</a></li>
+                <li class="nav-item"><a asp-page="/Catalog">Модели</a></li>
+                <li class="nav-item"><a asp-page="/History">История Porsche</a></li>
+                <li class="nav-item"><a asp-page="/Service">Обслуживание</a></li>
+                <li class="nav-item"><a asp-page="/Contacts">Контакты</a></li>
+                <li class="nav-item"><a asp-page="/TradeIn">TRADE-IN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Контент страницы -->
+    <main>
+        @RenderBody()
+    </main>
+
+    <footer>
+        <div class="social-media-links">
+            <img src="@Url.Content("~/icons/porsche-icon.svg")" alt="brand icon" />
+            <span>Мы в социальных сетях</span>
+            <div>
+                <a href="#"><img src="@Url.Content("~/icons/icons8-вконтакте.svg")" alt="vk" /></a>
+                <a href="#"><img width="52" src="@Url.Content("~/icons/icons8-ютуб.svg")" alt="youtube" /></a>
+            </div>
+        </div>
+
+        <table>
+            <tr>
+                <td><a asp-page="/Catalog">Модельный ряд Porsche</a></td>
+                <td>Москва:<br />899999999</td>
+            </tr>
+            <tr>
+                <td><a asp-page="/Service">Обслуживание</a></td>
+                <td>Санкт-Петербург:<br />899999999</td>
+            </tr>
+            <tr>
+                <td><a asp-page="/Contacts">Оферта и политика конфиденциальности</a></td>
+                <td>Самара:<br />899999999</td>
+            </tr>
+        </table>
+    </footer>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
