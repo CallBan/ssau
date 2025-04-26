@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Car Price Prediction</title>
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='style.css') }}"
+        />
+    </head>
+    <body>
+        <h1>Car Price Prediction</h1>
+        <form id="carForm">
+            <!-- Марка -->
+            <label for="make">Марка:</label>
+            <select id="make" name="make" onchange="updateModels()" required>
+                <option value="">Выберите марку</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Honda">Honda</option>
+                <option value="Ford">Ford</option>
+                <!-- Добавьте другие марки по необходимости --></select
+            ><br />
+
+            <!-- Модель -->
+            <label for="model">Модель:</label>
+            <select id="model" name="model" required>
+                <option value="">Выберите модель</option>
+                <!-- Опции обновляются на основе выбранной марки --></select
+            ><br />
+
+            <!-- Пробег -->
+            <label for="mileage">Пробег (км):</label>
+            <input type="number" id="mileage" name="mileage" required /><br />
+
+            <!-- Лет в эксплуатации -->
+            <label for="years_used">Лет в эксплуатации:</label>
+            <input
+                type="number"
+                id="years_used"
+                name="years_used"
+                required
+            /><br />
+
+            <!-- Битый -->
+            <label for="damaged">Битый:</label>
+            <input type="checkbox" id="damaged" name="damaged" /><br />
+
+            <!-- Тип кузова -->
+            <label for="body_type">Тип кузова:</label>
+            <select id="body_type" name="body_type" required>
+                <option value="">Выберите тип кузова</option>
+                <option value="sedan">Седан</option>
+                <option value="suv">Внедорожник</option>
+                <option value="hatchback">Хэтчбек</option>
+                <!-- Добавьте другие типы кузова --></select
+            ><br />
+
+            <!-- Тип топлива -->
+            <label for="fuel_type">Тип топлива:</label>
+            <select id="fuel_type" name="fuel_type" required>
+                <option value="">Выберите тип топлива</option>
+                <option value="petrol">Бензин</option>
+                <option value="diesel">Дизель</option>
+                <option value="electric">Электричество</option>
+                <!-- Добавьте другие типы топлива --></select
+            ><br />
+
+            <!-- Тип привода -->
+            <label for="drive_type">Тип привода:</label>
+            <select id="drive_type" name="drive_type" required>
+                <option value="">Выберите тип привода</option>
+                <option value="fwd">Передний</option>
+                <option value="rwd">Задний</option>
+                <option value="awd">Полный</option></select
+            ><br />
+
+            <!-- Тип трансмиссии -->
+            <label for="transmission_type">Тип трансмиссии:</label>
+            <select id="transmission_type" name="transmission_type" required>
+                <option value="">Выберите тип трансмиссии</option>
+                <option value="manual">Механика</option>
+                <option value="automatic">Автомат</option>
+                <option value="cvt">Вариатор</option>
+                <!-- Добавьте другие типы трансмиссии --></select
+            ><br />
+
+            <!-- Объем двигателя -->
+            <label for="engine_size">Объем двигателя (л):</label>
+            <input
+                type="number"
+                step="0.1"
+                id="engine_size"
+                name="engine_size"
+                required
+            /><br />
+
+            <!-- Мощность -->
+            <label for="power">Мощность (л.с.):</label>
+            <input type="number" id="power" name="power" required /><br />
+
+            <!-- Кнопка отправки данных -->
+            <button type="button" onclick="predictPrice()">
+                Рассчитать стоимость
+            </button>
+        </form>
+
+        <!-- Блок для отображения предсказанной стоимости -->
+        <h2 id="result"></h2>
+
+        <script>
+            // Функция для обновления списка моделей в зависимости от выбранной марки
+            function updateModels() {
+                const make = document.getElementById("make").value;
+                const modelSelect = document.getElementById("model");
+
+                // Очищаем текущий список моделей
+                modelSelect.innerHTML =
+                    '<option value="">Выберите модель</option>';
+
+                // Списки моделей для разных марок
+                const modelsByMake = {
+                    Toyota: ["Camry", "Corolla", "RAV4"],
+                    Honda: ["Civic", "Accord", "CR-V"],
+                    Ford: ["Focus", "Fusion", "Escape"],
+                    // Добавьте другие модели по необходимости
+                };
+
+                // Если есть модели для выбранной марки, добавляем их в выпадающий список
+                if (modelsByMake[make]) {
+                    modelsByMake[make].forEach((model) => {
+                        const option = document.createElement("option");
+                        option.value = model;
+                        option.text = model;
+                        modelSelect.appendChild(option);
+                    });
+                }
+            }
+
+            // Функция для отправки данных на сервер и получения предсказания
+            function predictPrice() {
+                const data = {
+                    make: document.getElementById("make").value,
+                    model: document.getElementById("model").value,
+                    mileage: document.getElementById("mileage").value,
+                    years_used: document.getElementById("years_used").value,
+                    damaged: document.getElementById("damaged").checked ? 1 : 0,
+                    body_type: document.getElementById("body_type").value,
+                    fuel_type: document.getElementById("fuel_type").value,
+                    drive_type: document.getElementById("drive_type").value,
+                    transmission_type:
+                        document.getElementById("transmission_type").value,
+                    engine_size: document.getElementById("engine_size").value,
+                    power: document.getElementById("power").value,
+                };
+
+                fetch("/predict", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(data),
+                })
+                    .then((response) => response.json())
+                    .then((result) => {
+                        document.getElementById("result").innerText =
+                            "Predicted Price: $" +
+                            result.predicted_price.toFixed(2);
+                    })
+                    .catch((error) => {
+                        console.error("Error:", error);
+                    });
+            }
+        </script>
+    </body>
+</html>

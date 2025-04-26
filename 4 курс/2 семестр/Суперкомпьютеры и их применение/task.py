@@ -96,8 +96,6 @@ def gather_test(comm, iterations, message_size):
     return end - start
 
 # Функция для измерения времени локального копирования данных
-
-
 def local_copy_test(iterations, message_size):
     data = np.empty(message_size, dtype=np.byte)
     target = np.empty(message_size, dtype=np.byte)

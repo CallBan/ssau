@@ -1,0 +1,31 @@
+,brand,price,years_in_operation,is_crashed,model,mileage,body_type,drive_type,fuel_type,engine_volume,transmission_type,power
+13042,Renault,490000,14,False,Renault Sandero,226000,хетчбэк,передний,бензин,1.4,MT,75
+21233,ВАЗ (LADA),1380000,6,False,ВАЗ (LADA) Vesta Cross,46565,универсал,передний,бензин,1.8,MT,122
+3146,Ford,650000,14,True,Ford Focus,161500,хетчбэк,передний,бензин,1.6,MT,115
+1013,BMW,17999000,2,False,BMW X7,74,внедорожник,полный,бензин,3.0,AT,380
+16260,Volkswagen,785000,11,False,Volkswagen Jetta,157000,седан,передний,бензин,1.6,MT,105
+13496,Renault,809000,12,False,Renault Sandero Stepway,243000,хетчбэк,передний,бензин,1.6,MT,84
+16155,Volkswagen,1750000,5,False,Volkswagen Polo,63000,лифтбек,передний,бензин,1.6,AT,110
+2447,Chevrolet,805000,12,False,Chevrolet Aveo,97500,седан,передний,бензин,1.6,AT,115
+23120,ГАЗ,785000,12,False,ГАЗ ГАЗель 3302,296563,пикап,задний,бензин,2.9,MT,107
+1844,Chevrolet,175000,18,False,Chevrolet Lanos,92000,седан,передний,бензин,1.5,MT,86
+2734,Chevrolet,570000,12,False,Chevrolet Niva,132000,внедорожник,полный,бензин,1.7,MT,80
+10366,Mercedes-Benz,34500000,2,False,Mercedes-Benz G-класс AMG,3388,внедорожник,полный,бензин,4.0,AT,585
+12618,Peugeot,369000,17,False,Peugeot 308,185002,хетчбэк,передний,бензин,1.6,MT,120
+12919,Renault,685000,13,False,Renault Fluence,133000,седан,передний,бензин,1.6,MT,106
+15659,Toyota,2760000,7,False,Toyota Camry,139000,седан,передний,бензин,2.5,AT,181
+2729,Chevrolet,1425000,5,False,Chevrolet Nexia,40323,седан,передний,бензин,1.5,AT,106
+16457,Volkswagen,990000,12,False,Volkswagen Polo,192000,седан,передний,бензин,1.6,AT,105
+1876,Chevrolet,490000,12,False,Chevrolet Niva,155000,внедорожник,полный,бензин,1.7,MT,80
+17723,ВАЗ (LADA),250000,15,False,ВАЗ (LADA) 2115 Samara,139400,седан,передний,бензин,1.6,MT,81
+14920,Toyota,930000,19,False,Toyota Avensis,325000,седан,передний,бензин,1.8,AT,129
+8967,Kia,749000,14,False,Kia Rio,154105,хетчбэк,передний,бензин,1.4,AT,95
+9918,Mazda,840000,19,False,Mazda CX-7,197000,внедорожник,передний,бензин,2.3,AT,238
+11137,Nissan,1690000,13,False,Nissan X-Trail,183300,внедорожник,полный,бензин,2.0,CVT,141
+16379,Volkswagen,2350000,7,False,Volkswagen Tiguan,116000,внедорожник,полный,бензин,2.0,AMT,180
+6954,Hyundai,654900,20,False,Hyundai Matrix,203118,минивэн,передний,бензин,1.8,AT,122
+5831,Hyundai,1889900,4,False,Hyundai Accent,60000,седан,передний,бензин,1.6,AT,123
+11646,Nissan,110000,26,True,Nissan Primera,218800,универсал,передний,бензин,2.0,CVT,150
+5015,Haval,1949000,4,False,Haval F7,70135,внедорожник,передний,бензин,1.5,AMT,150
+22792,ГАЗ,2855000,4,False,ГАЗ ГАЗель Next,175339,фургон,задний,бензин,2.7,MT,107
+3636,Ford,1280000,7,False,Ford Focus,116310,хетчбэк,передний,бензин,1.6,AMT,105
