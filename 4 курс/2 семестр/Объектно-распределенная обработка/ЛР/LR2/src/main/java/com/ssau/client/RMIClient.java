@@ -24,8 +24,8 @@ public class RMIClient {
         System.out.println("3. Добавить книгу");
         System.out.println("4. Удалить автора по id");
         System.out.println("5. Удалить книгу по id");
-//        System.out.println("6. Получить список авторов");
-//        System.out.println("7. Получить список книг");
+        System.out.println("6. Получить список авторов");
+        System.out.println("7. Получить список книг");
         System.out.println("0. Выход");
         System.out.print("Выберите опцию: ");
         int choice = Integer.parseInt(scanner.nextLine());
